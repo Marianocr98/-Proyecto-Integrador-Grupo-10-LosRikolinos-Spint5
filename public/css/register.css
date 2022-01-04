@@ -39,6 +39,10 @@ body {
     font-size: 35px;
     margin-top: 0px;
 }
+.text-danger{
+    color: rgb(255, 0, 0);
+    text-align: center;
+}
 .name-user{
     display: flex;
     flex-direction: row;

@@ -45,18 +45,18 @@
 
                 <!-- Poner nombre y apellido de usuario  -->
                 <label for="usuario"></label>
-                <input type="text" placeholder="Nombre y apellido" name="usuario" id="usuario" require>
+                <input type="text" placeholder="Nombre y apellido" name="fullName" id="usuario"  >
 
                 <%if(locals.errors && errors.usuario) { %>
                     <div class="text-danger">
                         <%= errors.usuario.msg %> 
                     </div>
                     <% } %> 
-
+                    
             <!-- Poner email de usuario  -->
                 
                 <label for="email"></label>
-                <input type="email" placeholder="Correo electronico" name="email" id="email" require>
+                <input type="email" placeholder="Correo electronico" name="email" id="email" >
 
                 <%if(locals.errors && errors.email) { %>
                     <div class="text-danger">
@@ -66,7 +66,7 @@
                 
                 <!-- Poner contraseña de usuario  -->
                     <label for="password"></label>
-                    <input type="password" placeholder="Escribe tu contraseña" name="password" id="password" require>
+                    <input type="password" placeholder="Escribe tu contraseña" name="password" id="password" >
 
                     <%if(locals.errors && errors.password) { %>
                         <div class="text-danger">
@@ -76,16 +76,21 @@
                 
                     <!-- Poner contraseña de usuario, confirmar  -->
                     <label for="password"></label>
-                    <input type="password" placeholder="Confirmar tu contraseña" name="password" id="password" require>
+                    <input type="password" placeholder="Confirmar tu contraseña" name="confirm" id="password" >
 
                     <%if(locals.errors && errors.password) { %>
                         <div class="text-danger">
-                            <%= errors.password.msg %> 
+                            <%= errors.confirm.msg %> 
                         </div>
                         <% } %>
 
                     <label for="avatar">Tu avatar:</label>
                     <input type="file" name="avatar" id="avatar">
+                    <% if (locals.errors && errors.avatar) { %>
+                        <div class="text-danger">
+                            <%= errors.avatar.msg %>
+                        </div>
+                    <% } %>
                 </div>
 
             </section>
