@@ -1,0 +1,38 @@
+[{  
+    "id" : "1",
+    "first-name": "Marcelo",
+    "last-name": "Olivera",
+    "category": "admin",
+    "email":"marce@gmail.com",
+    "password":"dani12345",
+    "image" : ""
+    },
+    {
+    "id" : "2",
+    "first-name": "Mariano",
+    "last-name": "Cespedez",
+    "category": "admin",
+    "email":"marianodh@gmail.com",
+    "password":"mariano1234",
+    "image" : ""
+    },
+    {
+    "id" : "3",
+    "first-name": "Andres",
+    "last-name": "Nunez",
+    "category": "admin",
+    "email":"andresdh@gmail.com",
+    "password":"andres1234",
+    "image" : ""
+        },
+        {
+    "id" : "4",
+    "first-name": "Mayra",
+    "last-name": "Gutierrez",
+    "category": "admin",
+    "email":"mayradh@gmail.com",
+    "password":"mayra1234",
+    "image" : ""
+        }
+
+]

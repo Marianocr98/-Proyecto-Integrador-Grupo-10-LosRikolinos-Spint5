@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Los Rikolinos - Detalle del producto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&family=Pacifico&family=Permanent+Marker&family=Roboto:ital,wght@1,100&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat&family=Indie+Flower&family=Pacifico&family=Permanent+Marker&family=Roboto:ital,wght@1,100&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/css/productEdition.css">
+
+    <link rel="stylesheet" href="/css/styles.css">
+
+    
+</head>
+<body>
+
+    <!-- Inicio del Header -->
+
+    <%- include('../partials/header')  %> 
+
+    <!-- Fin del Header -->
+
+    <!-- Inicio del Main -->
+    
+    <main>
+        <h2>Formulario de edicion</h2>
+        <form action="/productEdition/<%=producto.id%>?_method=PUT" method="POST" enctype="multipart/form-data">
+            
+            <div class="form-edit-products">
+                <div class="title-form">
+                    <label for="title">Titulo</label>
+                    <input type="text" name="title" value="<%=producto.title%>">
+                </div>
+                
+                <div class="price-form">
+                    <label for="price">Precio</label>
+                    <input type="text" name="price" value="<%= producto.price %> ">
+                </div>
+
+                <div class="category-form">
+                    <label for="category">Categoria</label> 
+                    <select name="category" id="category">
+                        <option value="option">-Seleccionar-</option>
+                        <option value="hamburguer">Hamburguesas</option>
+                        <option value="pizza">Pizza</option>
+                        <option value="empanada">Empanadas</option>
+                        <option value="ravioles">Pastas</option>
+                        <option value="asado">Asado</option>
+                        <option value="postre">Postres</option>
+                        <option value="bebidas">Bebidas</option>
+                    </select>
+                </div>
+
+                <div class="file-submit-product">
+                    <label for="imgProductos">Imagen del producto:</label>
+                    <input type="file" name="imgProductos">
+                </div>
+
+                <div class="description-submit-products">
+                    <label for="description">Descripción:</label>
+                    <textarea name="description" id="description" cols="0" rows="6"> <%=producto.description%> </textarea>
+                </div>
+
+            </div>
+
+            <div class="button-edit-submit">
+                <button type="submit">Editar producto</button>
+            </div> 
+
+        </form>
+
+    </main>
+
+    <!-- Fin de Main -->
+
+    <!-- Inicio del Footer -->
+    
+    <%- include('../partials/footer')  %> 
+
+    <!-- Fin del Footer -->
+
+</body>
+</html>

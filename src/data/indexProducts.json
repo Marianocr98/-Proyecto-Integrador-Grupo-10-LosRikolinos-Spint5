@@ -1,0 +1,71 @@
+
+[
+    {
+        "name": "Hamburguesa",
+        "direction": "/productos/Hamburguesa",
+        "image":"/img/hamburguesa2.jpg",
+        "description":"Disfrute de las mejores Hamburgesas",
+        "category": "home"
+    },
+    {
+        "name": "Parrilla",
+        "direction": "/productos/Asado",
+        "image":"/img/carneasada.jpeg",
+        "description":"Especializados en parrilla",
+        "category": "home"
+    },
+    {
+        "name": "Pizza",
+        "direction": "/productos/Pizza",
+        "image":"/img/pizzas.jpeg" ,
+        "description":"Postres unicos y originales",
+        "category": "home"
+    },
+    {
+        "name": "Bebidas",
+        "direction": "/productos/Bebidas",
+        "image":"/img/vino.jpg",
+        "description":"Bebidas de todo tipo",
+        "category": "home"
+    },
+
+
+
+
+    {
+        "id": "Hamburguesa",
+        "image": "hamburguesa1.jpg",
+        "textoAltenativo": "Menu de Hamburguesas",
+        "category": "menu"
+    },
+    {
+        "id": "Pizza",
+        "image": "pizza.jpeg",
+        "textoAltenativo": "Seccion de pizzas",
+        "category": "menu"
+    },
+    {
+        "id": "Pastas",
+        "image": "ravioles.jpeg",
+        "textoAltenativo": "Seccion de Ravioles",
+        "category": "menu"
+    },
+    {
+        "id": "Empanadas",
+        "image": "empanadas.jpeg",
+        "textoAltenativo": "Seccion de empanadas",
+        "category": "menu"
+    },
+    {
+        "id": "Asado",
+        "image": "carneasada.jpeg",
+        "textoAltenativo": "Seccion de Asado",
+        "category": "menu"
+    },
+    {
+        "id":"Bebidas",
+        "image": "coctel.jpg",
+        "textoAltenativo": "Seccion de bebidas",
+        "category": "menu"
+    }
+]

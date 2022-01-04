@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Los Rikolinos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&family=Pacifico&family=Permanent+Marker&family=Roboto:ital,wght@1,100&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat&family=Indie+Flower&family=Pacifico&family=Permanent+Marker&family=Roboto:ital,wght@1,100&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    
+</head>
+<body>
+
+    <!-- Inicio del Header -->
+
+    <%- include('../partials/header')%> 
+
+    <!-- Fin del Header -->
+
+    <!-- Inicio del Main -->
+
+    <main>
+
+    
+        <div class="slider">
+			<ul>
+				<li>
+                    <img src="/img/carne.jpeg" alt="">
+                </li>
+
+                <li>
+                    <img src="/img/hamburguesa1.jpg" alt="">
+                </li>
+                                
+                <li>
+                    <img src="/img/comida.jpeg" alt="">
+                </li>
+        
+                <li>
+                    <img src="/img/bebidas.jpg" alt="">
+                </li>
+
+			</ul>
+		</div>
+
+
+<!-- Este hr es para hacer una linea de separacion-->
+
+    <div class="container-title">
+        <h2>Especialidades</h2>
+    </div>
+    <section  
+        class="conteiner-especialidades">    
+
+
+        <% homeProducts.forEach(element => { %>
+            <div class="productos">
+                    
+                    <a href="<%=  element.direction %> "> <h3><%= element.titulo %> </h3> 
+                        <img src="<%= element.image %> " alt=" <%= element.description %> " >  </a>
+                    
+
+                    
+                    
+                    
+            </div>
+
+        <% }) %>
+
+        
+
+            
+
+    </section>
+
+        <div class="ver-mas">
+            <a href="/menu">
+                <p>Ver mas</p>
+            </a> 
+        </div>
+    
+    <div class="container-title">
+        <h2 id="Nosotros">Nosotros</h2>
+    </div>
+    
+    <br>
+    <br>
+
+    <section class="nosotros">
+        
+
+        
+        <p>En Los Rikolinos nos preocupamos por ofrecerte una excelente propuesta.
+
+            Productos elaborados con materias primas y productos de la más alta calidad. Contamos con la más moderna tecnología para la elaboración de nuestras variedades de productos. Exquisitos sabores que harán de tus almuerzos y cenas momentos únicos.
+            
+            Los Rikolinos nos invita a disfrutar de la excelencia de la gastronomia Argentina, en un ambiente que recrea lo mejor de nuestra tradición y brinda la más personalizada atención.
+            
+            Ofrece a los amantes de la buena cocina una oferta gastronómica donde abundan los cortes y los platos más tradicionales de la cocina criolla.
+            
+            ...Gracias por siempre elegirnos... .
+        </p>
+    </section>
+
+
+    </main>
+
+    <!-- Fin de Main -->
+
+    <!-- Inicio del Footer -->
+    
+    <%- include('../partials/footer')  %> 
+
+    <!-- Fin del footer -->
+
+</body>
+</html>

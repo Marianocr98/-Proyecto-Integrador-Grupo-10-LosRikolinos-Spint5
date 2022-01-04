@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/productos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Los Rikolinos - Categorias</title>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&family=Pacifico&family=Permanent+Marker&family=Roboto:ital,wght@1,100&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat&family=Indie+Flower&family=Pacifico&family=Permanent+Marker&family=Roboto:ital,wght@1,100&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Inicio del Header -->
+
+    <%- include('../partials/header')  %> 
+
+    <!-- Fin del Header -->
+
+    <!-- Inicio del Main -->
+
+    <main>
+        <div class="container-title-form">
+            <h2>
+                <%= productos[0].category %>
+            </h2>
+
+            <form action="" method="">
+                <!-- <label for=""></label> -->
+                <select name="precios" id="">
+                    <option value="verprecio">Precios de</option>
+                    <option value="menorAmayor">-Menor a Mayor</option>
+                    <option value="mayorAmenor">-Mayor a Menor</option>
+                </select>
+            </form>
+        </div>
+
+        <section class="container-articles">
+
+            <% productos.forEach(element => { %>
+            <article class="container-productos">
+                    <a href="/productDetail/<%=element.id %>">
+                        <h4> <%= element.title  %> </h4>
+                    </a>
+                    <div class="container-img-barrita">
+                        <div class="container-img">
+                            <a href="/productDetail/<%=element.id %>">
+                                <img src="/img/<%=element.image %> " alt="<%= element.imgDescription %> ">
+                            </a>
+                            <h2> $<%= element.price %>,00 </h2>
+                        </div>
+                        <div class="container-barrita">
+                            <button>-</button>
+                            <p>1</p>
+                            <button>+</button>
+                            <button>Añadir al carrito</button>
+                        </div>
+                    </div>
+                </article>
+                <% }) %>
+
+        </section>
+    </main>
+
+    <!-- Fin del Main -->
+
+    <!-- Inicio del Footer -->
+
+    <%- include('../partials/footer')  %> 
+
+    <!-- Fin del Footer -->
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+main {
+    margin: 5px;
+}
+
+.h2-carrito {
+    margin: 20px auto;
+}
+
+.h2-carrito h2 {
+    text-align: center;
+    font-size: 30px;
+    background: linear-gradient(90deg, rgba(9, 9, 7, 1) 0%, rgba(203, 28, 28, 1) 51%, rgba(9, 8, 7, 1) 100%);
+}
+/* ----------- */
+
+main section {
+    margin: 20px 0;
+}
+
+/* ------------ */
+.container-articleCart {
+    border: 1px solid rgb(233, 167, 219);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgb(255 255 255 / 20%),
+    0 6px 20px 0 rgb(255 255 255 / 19%);
+}
+
+.container-img {
+    display: flex;
+    flex-direction: column;
+    width: 125px;
+    text-align: center;
+    margin-right: 5px;
+    border-radius: 10px;
+}
+
+.container-img img {
+    width: 100%;
+}
+
+.descriptiones-truck {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+}
+
+.descriptiones-truck div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 5px;
+}
+
+.descriptiones-truck div p {
+    text-align: center;
+    font-size: 18px;
+}
+.descriptiones-truck div input {
+    text-align: center;
+    margin: 0 10px;
+}
+
+.container-equis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 30px;
+    width: 40px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.container-equis i:hover {
+    color: red;
+}
+
+.container-precioTotal {
+    border: 1px solid rgb(233, 167, 219);
+    border-radius: 10px;
+    max-width: 300px;
+    margin: 20px auto;
+    font-size: 30px;
+    color: rgb(206, 18, 18);
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgb(255 255 255 / 20%),
+    0 6px 20px 0 rgb(255 255 255 / 19%);
+}
+
+.CajaComprar{
+    text-align: center;
+}
+.buttonComprar{
+    color: #fff;
+    font-size: 30px;
+    border: 1px solid rgb(233, 167, 219);
+    background-color: #000;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+}
+.buttonComprar:hover{
+    background: url("/img/fuegoHeader8.jpg") no-repeat;
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgb(255 255 255 / 20%),
+    0 6px 20px 0 rgb(255 255 255 / 19%);
+}
+
+@media (min-width: 481px) {
+    .container-articleCart {
+        justify-content: space-around;
+        max-width: 1000px;
+    }
+    .container-img {
+        flex-direction: row;
+        align-items: center;
+        font-size: 22px;
+        width: 50%;
+    }
+    .container-img img {
+        width: 70%;
+    }
+    .descriptiones-truck {
+        align-items: center;
+        width: 50%;
+    }
+    .descriptiones-truck div input {
+        font-size: 25px;
+    }
+    .descriptiones-truck div p {
+        font-size: 25px;
+    }
+}

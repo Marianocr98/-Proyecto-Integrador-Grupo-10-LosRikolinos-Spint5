@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/views/register.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Los Rikolinos - login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&family=Pacifico&family=Permanent+Marker&family=Roboto:ital,wght@1,100&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat&family=Indie+Flower&family=Pacifico&family=Permanent+Marker&family=Roboto:ital,wght@1,100&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/styles.css">
+
+</head>
+
+<body>
+
+    <!-- Inicio del Header -->
+
+    <%- include('../partials/header')  %> 
+
+    <!-- Fin del Header -->
+
+    <!-- Inicio del Main -->
+
+    <main> 
+        <section class="top-main">
+            <!-- icono usuario  -->
+            <div class="usuario">
+                <i class="far fa-user-circle"></i>
+            </div>
+        </section>
+        <!-- iniciar sesión...  -->
+        
+        <p class="login-user">Iniciar sesión</p>
+        <!-- inicio de sesion  -->
+        <form action="/index.html" method="POST">
+
+        <!-- Poner nombre de usuario  -->
+        <div class="padre-input">
+        <label for="nombre"></label>
+        <input type="text" placeholder="Usuario o e-mail" name="usuario" id="nombre">
+        <!-- Poner contraseña  -->
+        
+        <label for="password"></label>
+        <input type="password" placeholder="Contraseña" name="password" id="password">
+        </div>
+        <!-- Boton de inicio de sesión  -->
+        <div class="olvidaste-contra">
+            <a href="">olvidaste tu contraseña?</a>
+        </div>
+
+        <section class="buton">
+        <input type="submit" value="Iniciar sesión">
+        </section>
+    
+
+        <hr class="hr">
+
+        <div class="link">
+            <p>¿No tenés cuenta aún?</p>
+            <a class="link" href="/register">Registrate</a>
+        </div>
+
+        </form>
+    </main>
+
+    <!-- Fin del Main -->
+
+    <%- include('../partials/footer-user')  %> 
+    
+</body>
+</html>

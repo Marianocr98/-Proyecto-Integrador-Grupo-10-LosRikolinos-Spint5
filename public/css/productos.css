@@ -1,0 +1,165 @@
+.container-title-form{
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0;
+}
+
+.container-title-form h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 34px;
+    background: linear-gradient(90deg, rgba(9, 9, 7, 1) 0%,
+    rgba(203, 28, 28, 1) 51%, rgba(9, 8, 7, 1) 100%);
+}
+
+.container-title-form form {
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px 5px 0 0;
+}
+
+form select {
+    background-color: #000;
+    font-size: 16px;
+    color: white;
+    height: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2),
+    0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    cursor: pointer;
+}
+
+
+/* empieza productos */
+.container-articles {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container-productos {
+    max-width: 80%;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-productos a {
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    margin: 13px 0; 
+}
+
+.container-productos h4 {
+    width: 100%;
+    font-size: 18px;
+}
+
+.container-img-barrita {
+    border-radius: 50% 50% 0 0;
+    width: 100%;
+    
+}
+
+.container-img, .container-barrita {
+    width: 210px;
+}
+
+.container-img{
+    height: 120px;
+    border-radius: 50% 50% 0 0;
+    position: relative;
+    
+}
+
+.container-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50% 50% 0 0;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2),
+    0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+.container-img h2 {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+}
+
+.container-barrita {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 25px;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2),
+    0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+
+    .container-barrita button {
+        background-color: inherit;
+        font-size: 18px;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+
+    .container-barrita button:hover {
+        color: #FF0000;
+    }
+
+hr{
+    width: 50%;
+    color: white;
+    margin: 40px auto;
+} 
+
+@media (min-width: 769px) {
+    .container-title-form h2{
+        font-size: 45px;
+    }
+    .container-productos h4{
+        font-size: 32px;
+    }
+    form select{
+        font-size: 25px;
+    }
+    .container-productos {
+        width: 350px;
+        margin: 25px;
+    }
+    .container-img, .container-barrita {
+        width: 360px;
+    }
+    .container-img {
+        height: 220px;
+        border-radius: 50% 50% 0 0;
+        position: relative;
+    }
+    .container-img img {
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2),
+        0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    }
+    .container-img img:hover {
+        box-shadow: -9px 6px 20px 0 rgba(255, 255, 255, 0.19),
+        9px 6px 20px 0 rgba(255, 255, 255, 0.19);
+    }
+    .container-img h2 {
+        height: 40px;
+        font-size: 35px;
+    }
+    .container-barrita {
+        height: 40px;
+    }
+    .container-barrita button, p {
+        font-size: 30px;
+    }
+}

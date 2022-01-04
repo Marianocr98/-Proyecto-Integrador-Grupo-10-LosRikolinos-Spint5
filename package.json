@@ -1,0 +1,27 @@
+{
+  "name": "proyecto-integrador-sprint5",
+  "version": "1.0.0",
+  "description": "Presentable del link al tablero de trabajo del Sprint5 :",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-validator": "^6.14.0",
+    "method-override": "^3.0.0",
+    "multer": "^1.4.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marianocr98/Proyecto-Integrador-Grupo-10-LosRikolinos-Sprint5.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Marianocr98/Proyecto-Integrador-Grupo-10-LosRikolinos-Sprint5/issues"
+  },
+  "homepage": "https://github.com/Marianocr98/Proyecto-Integrador-Grupo-10-LosRikolinos-Sprint5#readme"
+}

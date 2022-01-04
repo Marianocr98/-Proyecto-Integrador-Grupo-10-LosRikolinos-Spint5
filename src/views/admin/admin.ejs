@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/create.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Cargar nuevos productos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&family=Pacifico&family=Permanent+Marker&family=Roboto:ital,wght@1,100&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat&family=Indie+Flower&family=Pacifico&family=Permanent+Marker&family=Roboto:ital,wght@1,100&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+    <%- include('../partials/header') %> 
+
+    <main>
+
+        <div class="container-title">
+            <h1 class="title">Subir productos</h1>
+        </div>
+
+        <form action="/productos/createProduct" method="POST" enctype="multipart/form-data">
+
+            <div class="padre-create">
+
+                <div class="name-submit-products">
+                    <label for="title">Nombre:</label>
+                    <input type="text" name="title" id="name-product">
+                </div>
+
+                <div class="price">
+                    <label for="price">Precio: </label>
+                    <input type="number" name="price">
+                </div>
+
+                
+                <div class="categorias-real">
+                    <label for="category">Categoria:</label>
+                    <select name="category" id="category">
+                        <option value="hamburguer">Hamburguesas</option>
+                        <option value="pizza">Pizza</option>
+                        <option value="empanada">Empanadas</option>
+                        <option value="ravioles">Pastas</option>
+                        <option value="asado">Asado</option>
+                        <option value="postre">Postres</option>
+                        <option value="bebidas">Bebidas</option>
+                    </select>
+                </div>
+                
+                <div class="file-submit-product">
+                    <label for="imgProductos">Imagen del producto:</label>
+                    <input type="file" name="imgProductos"> 
+                </div>
+                
+                <div class="description-submit-products">
+                    <label for="description">Descripción:</label>
+                    <textarea name="description" id="description" cols="0" rows="6"></textarea>
+                </div>
+
+                <div class="button-admin">
+    
+                    <button  type="submit">
+                        Crear Producto
+                    </button>
+    
+                </div>
+
+            </div>
+
+        </form>
+
+        <div class="button-admin cancel">
+            <a href="/viewCreate"><button>Cancelar</button type="submit"></a>
+        </div>    
+        
+        <hr>
+
+        <div class="container-table">
+
+            <h3>Listado de Productos</h3>
+
+            
+            <table class="table">
+                <tr>
+                    <th class="imageTh">Imagen</th>
+                    <th class="productoTh">Productos</th>
+                    <th class="nombreTh">Nombre</th>
+                    <th class="priceTh">Precio</th>
+                    <th>Editar</th>
+                    <th>Eliminar</th>
+                </tr>
+                <% listProduct.forEach(element => { %>
+                    <tr>
+                        <td class="imagenTd"><a href="/productDetail/<%=element.id %>" class="enlace"><img
+                                    src="/img/<%= element.image %>" alt="<%= element.title %>" class="container-img"> </a></td>
+                        <td class="containerProducts"><a href="/productDetail/<%=element.id %> %> " class="enlace"><%= element.title %> <img src="/img/<%= element.image %>" alt="<%= element.title %>" class="container-img"></a> $<%= element.price %></td>
+                        <td class="nombreTd"><a href="/productDetail/<%=element.id %>" class="enlace"> <%= element.title %></a></td>
+                        <td class="priceTd">$<%= element.price %> </td>
+                        <td><a href="/productEdition/<%= element.id %> "><button class="editar">Editar</button></a></td>
+                        <form action="/productDelete/<%=element.id%>?_method=DELETE" method="POST">
+                            <td><button class="eliminar">Eliminar</button></td>
+                        </form>
+                    </tr>
+                    <% }) %>
+            </table>
+        </div>
+    </main>
+
+    <%- include('../partials/footer-user') %> 
+    
+</body>
+</html>

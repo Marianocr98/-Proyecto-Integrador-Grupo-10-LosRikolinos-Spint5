@@ -1,0 +1,747 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+}
+
+body {
+    background-color: #000;
+    color: #ebebeb;
+    
+} 
+
+
+
+.top-header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    background: url("/img/fuegoHeader8.jpg") no-repeat;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+
+.contenedor-buscador-navbar{
+    display: none;
+}
+
+.cuenta-registro{
+    display: none;
+}
+
+.burger-menu {
+    width: 60px;
+    height: 50%;
+}
+
+.burger-menu i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    color: #fff;
+    background-color: inherit;
+}
+
+.cart {
+    text-align: center;
+    padding-top: 60px;
+    font-size: 25px;
+}
+
+.cart i {
+    color: white;
+}
+
+.logo {
+    max-width: 272px;
+    margin-left: 20px;
+}
+
+.logo img {
+    max-width: 100%;
+
+}
+
+.container-user-carrito {
+    display: none;
+}
+
+.desplegable {
+    display: none;
+}
+
+/* Finalizacion del Header*/
+
+
+/*Section*/
+
+/*Inicio del Main*/
+
+
+.slider {
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	width: 100%;
+    height: 200px;
+}    
+
+.slider ul {
+display: flex;
+padding: 0;
+width: 400%;
+animation: carrucel 14s infinite alternate linear;  
+}
+
+@keyframes carrucel {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+.container-title h2 {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 30px;
+    background: linear-gradient(90deg, rgba(9,9,7,1) 0%,
+    rgba(203,28,28,1) 51%, rgba(9,8,7,1) 100%);
+}
+
+
+
+.conteiner-especialidades{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productos{
+    width: 220px;
+    margin: 15px 10px;
+    
+}
+
+.productos img{
+    
+    width: 100%;  
+    height: 200px;
+    border-radius: 50%;
+    
+}
+
+.productos .PrecioProduc{
+
+    position: relative;
+    text-align: center;
+}
+
+.productos .PrecioProduc p{
+    max-width: 100%;
+    font-size: 20px;
+}
+
+.productos h3{
+    display: flex;
+    justify-content: center; 
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+.productos a {
+    text-decoration: none;
+}
+
+
+.precio{
+    color: rgb(16, 199, 16);
+}
+
+.ver-mas{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    
+}
+
+.ver-mas p {
+    margin: 40px 0px;
+    text-align: center;
+    font-size: 30px;
+    color: red;
+    border-radius: 10px;
+    background-color: black;
+    text-decoration: none;
+}
+
+.ver-mas a{
+    text-decoration: none;
+}
+
+/*INICIO SECION DE NOSOTROS */
+.nosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin: 30px auto ;
+}
+.nosotros p{
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;    
+}
+/*FIN DE SECCION DE NOSOTROS*/
+
+
+/*FIN DEL MAIN*/
+
+
+/*INICIO DEL FOOTER*/
+
+.container-footer {
+    background: url("/img/fuegoHeader.jpg") no-repeat;
+    background-size: cover; 
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-footer {
+    width: 40%;
+}
+
+.logo-footer img {
+    width: 100%;
+    opacity: 0.8;
+}
+
+.container-footer p {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.container-footer ul {
+    list-style-type: none;
+    max-width: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container-footer li {
+    margin: 10px;
+}
+
+.container-footer li a {
+    text-decoration: none;
+    font-size: 35px;
+    color: white;
+}
+
+.container-footer li a:hover {
+    color: rgb(202, 0, 0);
+}
+
+
+/* Termina el footer */
+
+/* Empieza el diseño responsivo 481px */
+
+@media (min-width: 481px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #000;
+        color: #ebebeb;
+        
+    }
+
+    .top-header {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        background: url("/img/fuegoHeader8.jpg") no-repeat;
+        background-size: cover;
+    }
+
+    .burger-menu {
+        width: 60px;
+        height: 100px;
+        padding: 15px 0px;
+    }
+
+    .burger-menu i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 35px;
+        color: #fff;
+    }
+
+    .cart {
+        text-align: center;
+        padding-bottom: 15px;
+        font-size: 25px;
+        padding-top: 10px;
+
+    }
+
+    .cart i {
+        color: white;
+    }
+
+    .logo {
+        max-width: 300px;
+        margin-left: 20px;
+    }
+
+    .logo img {
+        max-width: 100%;
+    }
+
+    /* Finalizacion del Header*/
+
+    /*Section*/
+
+    /*Inicio del Main*/
+
+    .slider {
+        width: 100%;
+        margin: auto;
+    }
+
+    .slider li {
+        width: 100%;
+        list-style: none;
+    }
+
+    .slider img {
+        width: 100%;
+        height: 400px;
+    }
+
+    .slider ul {
+        display: flex;
+        padding: 0;
+        width: 400%;
+        animation-name: carrucel;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in;
+
+        /*Forma breve de escribir animation
+            animation: carrucel 20s infinite alternate; */
+    }
+
+    @keyframes carrucel {
+        0% {
+            margin-left: 0;
+        }
+
+        20% {
+            margin-left: 0;
+        }
+
+        25% {
+            margin-left: -100%;
+        }
+
+        45% {
+            margin-left: -100%;
+        }
+
+        50% {
+            margin-left: -200%;
+        }
+
+        70% {
+            margin-left: -200%;
+        }
+
+        75% {
+            margin-left: -300%;
+        }
+
+        100% {
+            margin-left: -300%;
+        }
+    }
+
+    .container-title h2 {
+        margin-top: 40px;
+        text-align: center;
+        font-size: 40px;
+        background: rgb(9, 9, 7);
+        background: linear-gradient(90deg, rgba(9, 9, 7, 1) 0%, rgba(203, 28, 28, 1) 51%, rgba(9, 8, 7, 1) 100%);
+    }
+
+    .conteiner-especialidades {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 30px 0px 90px;
+        justify-content: space-around;
+    }
+
+    .productos {
+        width: 40%;
+        margin: 10px 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .productos img {
+        width: 230px;
+        height: 230px;
+        border-radius: 50%;
+        margin-top: 20px;
+
+    }
+
+    .productos .PrecioProduc {
+        text-align: center;
+    }
+
+    .productos .PrecioProduc p {
+        max-width: 100%;
+        font-size: 20px;
+    }
+
+    .productos h3 {
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+        
+        
+    }
+
+
+    /*INICIO SECION DE NOSOTROS */
+    .nosotros {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        margin: 30px auto;
+    }
+
+    .nosotros p {
+        padding: 10px;
+        margin-top: 10px;
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    /*FIN DE SECCION DE NOSOTROS*/
+
+    /*FIN DEL MAIN*/
+
+    /*INICIO DEL FOOTER*/
+
+    .container-footer {
+        background: url("/img/fuegoHeader.jpg") no-repeat;
+        background-size: cover;
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-footer {
+        width: 40%;
+    }
+
+    .logo-footer img {
+        width: 100%;
+        opacity: 0.8;
+    }
+
+    .container-footer p {
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .container-footer ul {
+        list-style-type: none;
+        max-width: 350px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .container-footer li {
+        margin: 10px;
+    }
+
+    .container-footer li a {
+        text-decoration: none;
+    }
+
+    .container-footer_list img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+
+    /* Termina el footer */
+}
+
+
+/* Empieza el diseño responsivo 769px */
+
+@media (min-width: 769px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #000;
+        color: #ebebeb;
+    }
+
+    .cart {
+        padding-top: 10px;
+    }
+
+
+    .slider {
+        width: 100%;
+        margin: auto;
+    }
+
+    .slider li {
+        width: 100%;
+        list-style: none;
+    }
+
+    .slider img {
+        width: 100%;
+        height: 550px;
+    }
+}
+
+/* Empieza el diseño responsivo 990px */
+@media (min-width: 1030px) {
+    .contenedor-buscador-navbar {
+        display: block;
+
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .cuenta-registro {
+        display: block;
+        text-align: end;
+        font-size: 30px;
+        padding-bottom: 40px;
+        padding-right: 20px;
+    }
+
+    .cuenta-registro a i {
+        color: white;
+    }
+
+    .cuenta-registro a:hover i {
+        color: rgb(202, 0, 0);
+    }
+
+
+    .container-burger-cart {
+        width: 15%;
+    }
+
+    .cart {
+        text-align: end;
+        padding-right: 20px;
+    }
+
+    .cart i:hover {
+        color: rgb(220, 0, 0);
+    }
+
+    .titulos-home {
+        padding-bottom: 15px;
+    }
+
+    .titulos-home a {
+        text-decoration: none;
+        color: #ebebeb;
+        margin: 0px 10px;
+        font-size: 24px;
+    }
+
+    .titulos-home a:hover {
+        color: rgb(202, 0, 0);
+    }
+
+    .buscador form {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        height: 40px;
+    }
+
+    .buscador {
+        padding-top: 15px;
+        text-align: center;
+    }
+
+    .buscador input {
+        height: 28px;
+        width: 50%;
+        border-radius: 5px;
+        border: none;
+        transition: all 470ms;
+    }
+
+    .buscador input::placeholder {
+        text-align: center;
+    }
+
+    .buscador input:hover,
+    .buscador input:active {
+        width: 70%;
+        height: 33px;
+    }
+
+    .buscador button {
+        height: 30px;
+        width: 30px;
+        border-radius: 5px;
+        background-color: inherit;
+        border: none;
+        color: white;
+        font-size: 20px;
+    }
+
+    .buscador button i {
+        cursor: pointer;
+    }
+
+
+    .slider {
+        width: 100%;
+        margin: auto;
+    }
+
+    .slider li {
+        width: 100%;
+        list-style: none;
+    }
+
+    .slider img {
+        width: 100%;
+        height: 500px;
+    }
+
+
+    .ver-mas p {
+        margin: 40px 0px;
+        text-align: center;
+        font-size: 30px;
+        color: red;
+        border-radius: 10px;
+        background-color: black;
+        text-decoration: none;
+    }
+
+    .ver-mas p:hover {
+        box-shadow: 0 4px 0px 0 rgb(255 255 255 / 20%), 0 6px 0px 0 rgb(255 255 255 / 19%);
+    }
+
+    .productos .PrecioProduc p {
+        max-width: 100%;
+        font-size: 25px;
+    }
+
+
+    .logo-footer {
+        text-align: center;
+    }
+
+    .logo-footer img {
+        width: 300px;
+        margin: auto;
+    }
+
+
+}
+
+/* Empieza el diseño responsivo 1280px */
+
+@media (min-width: 1280px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+
+    .slider img {
+        width: 100%;
+        height: 500px;
+    }
+
+    .cuenta-registro {
+        display: block;
+        text-align: end;
+        font-size: 30px;
+        padding-bottom: 40px;
+        padding-right: 20px;
+    }
+
+    .cart {
+        text-align: end;
+        padding-right: 20px;
+    }
+
+
+    .container-title h2 {
+
+        font-size: 45px;
+    }
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles-shopping-cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <title>Los Rikolinos - Carrito de compras</title>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&family=Pacifico&family=Permanent+Marker&family=Roboto:ital,wght@1,100&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat&family=Indie+Flower&family=Pacifico&family=Permanent+Marker&family=Roboto:ital,wght@1,100&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/styles.css">
+
+</head>
+
+<body>
+
+    <!-- Inicio del Header -->
+
+    <%- include('../partials/header')  %> 
+
+    <!-- Fin del Header -->
+
+    <!-- Inicio del Main -->
+
+    <main>
+        <div class="h2-carrito">
+            <h2> Carrito</h2>
+        </div>
+
+        <!-- Articulos de comida -->
+        <section>
+            <article class="container-articleCart">
+                <div class="container-img">
+                    <img src="/img/hamburguesa1.jpg" alt="">
+                    <p>Nombre del articulo</p>
+                </div>
+
+                <div class="descriptiones-truck">
+                    <div>
+                        <p>Cantidad</p>
+                        <input type="number" value="1" min="1" max="25">
+                    </div>
+                    <div>
+                        <p>Precio</p>
+                        <p class="price">$1000</p>
+                    </div>  
+                </div>
+                <div class="container-equis">
+                    <i class="fas fa-times"></i>
+                </div>
+            </article>
+        </section>
+        <!-- Articulos de comida -->
+
+        <!-- Articulos de comida -->
+        <section>
+            <article class="container-articleCart">
+                <div class="container-img">
+                    <img src="/img/hamburguesa1.jpg" alt="">
+                    <p>Nombre del articulo</p>
+                </div>
+
+                <div class="descriptiones-truck">
+                    <div>
+                        <p>Cantidad</p>
+                        <input type="number" value="1" min="1" max="25">
+                    </div>
+                    <div>
+                        <p>Precio</p>
+                        <p class="price">$1000</p>
+                    </div>
+                </div>
+                <div class="container-equis">
+                    <i class="fas fa-times"></i>
+                </div>
+            </article>
+        </section>
+        <!-- Articulos de comida -->
+        <!-- Articulos de comida -->
+        <section>
+            <article class="container-articleCart">
+                <div class="container-img">
+                    <img src="/img/hamburguesa1.jpg" alt="">
+                    <p>Nombre del articulo</p>
+                </div>
+
+                <div class="descriptiones-truck">
+                    <div>
+                        <p>Cantidad</p>
+                        <input type="number" value="1" min="1" max="25">
+                    </div>
+                    <div>
+                        <p>Precio</p>
+                        <p class="price">$1000</p>
+                    </div>
+                </div>
+                <div class="container-equis">
+                    <i class="fas fa-times"></i>
+                </div>
+            </article>
+        </section>
+        <!-- Articulos de comida -->
+        
+        <div class="container-precioTotal">
+            <p>Precio Total $000,00</p>
+        </div>
+        <div class="CajaComprar">
+            <button class = "buttonComprar" type="submit">Comprar</button>
+        </div>
+    </main>
+
+    <!-- Fin del Main -->
+
+    <!-- Inicio del Footer -->
+
+    <%- include('../partials/footer')  %> 
+
+    <!-- Inicio del Footer -->
+        
+</body>
+
+</html>

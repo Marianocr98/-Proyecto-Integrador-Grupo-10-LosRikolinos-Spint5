@@ -1,0 +1,338 @@
+[
+ {
+  "id": "1",
+  "title": "Jamón y Queso",
+  "description": "  Empanadas de jamón con extra queso  ",
+  "price": "199  ",
+  "category": "option",
+  "image": "empanada-jamon-y-queso.jpg"
+ },
+ {
+  "id": 2,
+  "title": "Pollo",
+  "image": "empanadas.jpeg",
+  "imgDescription": "Empanadas fritas",
+  "description": "",
+  "price": 8000,
+  "section": "productos",
+  "category": "Empanadas"
+ },
+ {
+  "id": 3,
+  "title": "Carne",
+  "image": "Empanada-de-Carne.jpg",
+  "imgDescription": "Empanadas de carne",
+  "description": "",
+  "price": 120,
+  "section": "productos",
+  "category": "Empanadas"
+ },
+ {
+  "id": 4,
+  "title": "Choclo",
+  "image": "empanadas2.jpeg",
+  "imgDescription": "Empanadas al horno",
+  "description": "",
+  "price": 150,
+  "section": "productos",
+  "category": "Empanadas"
+ },
+ {
+  "id": 5,
+  "title": "Arabes",
+  "image": "empanadas-arabes.jpg",
+  "imgDescription": "Empanadas Arabes",
+  "description": "",
+  "price": 155,
+  "section": "productos",
+  "category": "Empanadas"
+ },
+ {
+  "id": 6,
+  "title": "Humita",
+  "image": "empanadas-humita.jpg",
+  "imgDescription": "Empanadas humita",
+  "description": "",
+  "price": 100,
+  "section": "productos",
+  "category": "Empanadas"
+ },
+ {
+  "id": 7,
+  "title": "Hambuguesa2.0",
+  "image": "hamburguesa.jpg",
+  "imgDescription": "",
+  "price": 499,
+  "section": "productos",
+  "category": "Hamburguesa"
+ },
+ {
+  "id": 8,
+  "title": "Hambuguesa3.0 ",
+  "image": "hamburguesa2.jpg",
+  "imgDescription": "imagen de Hamburguesa 3.0",
+  "price": 599,
+  "section": "productos",
+  "category": "Hamburguesa"
+ },
+ {
+  "id": 9,
+  "title": "Combo Mar del plata",
+  "image": "hamburguesa1.jpg",
+  "imgDescription": "imagen de Combo de Mar del Plata",
+  "price": 599,
+  "section": "productos",
+  "category": "Hamburguesa"
+ },
+ {
+  "id": 10,
+  "title": "Combo Big",
+  "image": "hamburguesa4.jpg",
+  "imgDescription": "imagen de Combo Big",
+  "price": 699,
+  "section": "productos",
+  "category": "Hamburguesa"
+ },
+ {
+  "id": 11,
+  "title": "Hamburguesa Triple",
+  "image": "hamburguesa5.jpg",
+  "imgDescription": "imagen de Hamurguesa Triple Bacon",
+  "price": 1,
+  "section": "productos",
+  "category": "Hamburguesa"
+ },
+ {
+  "id": 12,
+  "title": "Vegan Burguer",
+  "image": "hamburguesaPalta.jpg",
+  "imgDescription": "imagen de Grand Tasty",
+  "price": 799,
+  "section": "productos",
+  "category": "Hamburguesa"
+ },
+ {
+  "id": 13,
+  "title": "Muzzarella",
+  "image": "pizza.jpeg",
+  "imgDescription": "Grande de Muzzarella",
+  "price": 399,
+  "section": "productos",
+  "category": "Pizza"
+ },
+ {
+  "id": 14,
+  "title": "Napolitana",
+  "image": "napolitana.jpg",
+  "imgDescription": "Grande de Muzzarella",
+  "price": 399,
+  "section": "productos",
+  "category": "Pizza"
+ },
+ {
+  "id": 15,
+  "title": "Calabresa",
+  "image": "calabresa.jpg",
+  "imgDescription": "Grande de Muzzarella",
+  "price": 449,
+  "section": "productos",
+  "category": "Pizza"
+ },
+ {
+  "id": 16,
+  "title": "Fugaseta",
+  "image": "fugazzeta.jpg",
+  "imgDescription": "Grande de Muzzarella",
+  "price": 459,
+  "section": "productos",
+  "category": "Pizza"
+ },
+ {
+  "id": 17,
+  "title": "Italiana",
+  "image": "pizzas.jpeg",
+  "imgDescription": "Grande de Muzzarella",
+  "price": 479,
+  "section": "productos",
+  "category": "Pizza"
+ },
+ {
+  "id": 18,
+  "title": "Grande de Muzza",
+  "image": "grandeDeMuzza.jpg",
+  "imgDescription": "Grande de Muzzarella",
+  "price": 499,
+  "section": "productos",
+  "category": "Pizza"
+ },
+ {
+  "id": 19,
+  "title": "Ñoquis",
+  "image": "pastas3.jpg",
+  "imgDescription": "Ñoquis",
+  "price": 399,
+  "section": "productos",
+  "category": "Pastas"
+ },
+ {
+  "id": 20,
+  "title": "Ravioles",
+  "image": "pastas4.jpg",
+  "imgDescription": "Ravioles",
+  "price": 399,
+  "section": "productos",
+  "category": "Pastas"
+ },
+ {
+  "id": 21,
+  "title": "Pasta economica",
+  "image": "pastas1.jpg",
+  "imgDescription": "Pasta economica",
+  "price": 299,
+  "section": "productos",
+  "category": "Pastas"
+ },
+ {
+  "id": 22,
+  "title": "Pasta Italiana",
+  "image": "pastas2.jpg",
+  "imgDescription": "Pasta Italiana",
+  "price": 399,
+  "section": "productos",
+  "category": "Pastas"
+ },
+ {
+  "id": 23,
+  "title": "Pasta",
+  "image": "pastas.jpeg",
+  "imgDescription": "",
+  "price": 399,
+  "section": "productos",
+  "category": "Pastas"
+ },
+ {
+  "id": 24,
+  "title": "Pasta de la casa",
+  "image": "pastas.jpeg",
+  "imgDescription": "Pasta de la casa",
+  "price": 399,
+  "section": "productos",
+  "category": "Pastas"
+ },
+ {
+  "id": 25,
+  "title": "Combo Parrilita",
+  "image": "parrilla.jpg",
+  "imgDescription": "Vino",
+  "price": 899,
+  "section": "productos",
+  "category": "Asado"
+ },
+ {
+  "id": 26,
+  "title": "Combo Familiar",
+  "image": "parrillada.jpg",
+  "imgDescription": "Vino",
+  "price": 999,
+  "section": "productos",
+  "category": "Asado"
+ },
+ {
+  "id": 27,
+  "title": "Combo Carnivoro",
+  "image": "asado.jpeg",
+  "imgDescription": "Vino",
+  "price": 999,
+  "section": "productos",
+  "category": "Asado"
+ },
+ {
+  "id": 28,
+  "title": "Carne Wagyu",
+  "image": "carne.jpeg",
+  "imgDescription": "Vino",
+  "price": 1049,
+  "section": "productos",
+  "category": "Asado"
+ },
+ {
+  "id": 29,
+  "title": "Especial De La Casa",
+  "image": "carneasada.jpeg",
+  "imgDescription": "Vino",
+  "price": 199,
+  "section": "productos",
+  "category": "Asado"
+ },
+ {
+  "id": 30,
+  "title": "Sandwich de Bondiola",
+  "image": "Sandwich-de-Bondiola.jpg",
+  "imgDescription": "Vino",
+  "price": 199,
+  "section": "productos",
+  "category": "Asado"
+ },
+ {
+  "id": 31,
+  "title": "Vino Michel Torino",
+  "image": "bebida1.jpg",
+  "imgDescription": "Vino Michel Torino",
+  "price": 199,
+  "section": "productos",
+  "category": "Bebidas"
+ },
+ {
+  "id": 32,
+  "title": "Vino Norton",
+  "image": "bebida2.jpg",
+  "imgDescription": "Vino Norton",
+  "price": 199,
+  "section": "productos",
+  "category": "Bebidas"
+ },
+ {
+  "id": 33,
+  "title": "Sprite",
+  "image": "bebida3.jpg",
+  "imgDescription": "Sprite",
+  "price": 199,
+  "section": "productos",
+  "category": "Bebidas"
+ },
+ {
+  "id": 34,
+  "title": "Coca Cola",
+  "image": "bebida4.jpg",
+  "imgDescription": "Coca Cola",
+  "price": 199,
+  "section": "productos",
+  "category": "Bebidas"
+ },
+ {
+  "id": 35,
+  "title": "Corona",
+  "image": "bebida5.jpg",
+  "imgDescription": "Corona",
+  "price": 199,
+  "section": "productos",
+  "category": "Bebidas"
+ },
+ {
+  "id": 36,
+  "title": "Heineken",
+  "image": "bebida6.png",
+  "imgDescription": "Heineken",
+  "price": 199,
+  "section": "productos",
+  "category": "Bebidas"
+ },
+ {
+  "id": "37",
+  "title": "Brocheta",
+  "description": " Brocheta de pollo",
+  "price": "350 ",
+  "category": "asado",
+  "image": "imgProductos-1640730881734.jpg"
+ }
+]

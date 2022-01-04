@@ -1,0 +1,218 @@
+* {    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 20px;
+}
+.container-title{
+    display: flex;
+    justify-content: center;
+}
+
+.title{
+    font-size: 32px;
+    color: rgb(236, 29, 29);
+    text-align: center;
+}
+
+.padre-create div {
+    margin: 15px 0;
+}
+
+.padre-create{ 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 330px;
+    margin: 0 auto;
+}
+
+.padre-create input{
+    border: 0;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 20px;
+    
+}
+
+.description-submit-products textarea{
+    width: 100%;
+}
+
+.categorias-real {
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.categorias-real label {
+    width: 100%;
+}
+
+.categorias-real select {
+    margin: 0 auto;
+}
+
+.img-product input{
+    display: flex;
+    margin-left:0px ;
+    font-size: 15px;
+    width: 500px;
+}
+
+
+
+.button-admin{
+    display: flex;
+    justify-content: space-around;
+}
+
+.button-admin button{
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    border: 1px solid white;
+    font-size: 20px;
+    padding: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.cancel {
+    max-width: 290px;
+    margin: 0 auto; 
+}
+
+.button-admin a {
+    width: 100%;
+}
+
+hr {
+    width: 50%; 
+    margin: 50px auto;
+}
+
+h3 {
+    margin: 35px;
+}
+/*----------------tablas------------- */
+
+.container-table {
+    text-align: center;
+}
+
+.table {
+    margin: 0 auto;
+}
+
+th, td {
+    border: 1px solid white;
+    padding: 5px;
+}
+
+.imageTh,
+.nombreTh,
+.priceTh,
+.imagenTd,
+.nombreTd,
+.priceTd {
+    display: none;
+}
+
+.containerProducts{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-img {
+    width: 80px;
+    margin: 0 auto;
+}
+
+
+.enlace {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    border: 2px solid white;
+    padding: 5px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.editar {
+    background-color: green;
+}
+
+.eliminar {
+    background-color: red;
+}
+
+@media (min-width: 769px) 
+{
+
+    .padre-create{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 600px;
+    }
+    .padre-create div{
+        width: 45%;
+    }
+    div .description-submit-products {
+        width: 100%;
+    }
+    
+    div .button-admin{
+        width: 50%;
+        margin: 10px auto;
+    }
+    .cancel {
+        max-width: 273px;
+        margin: 0 auto;
+    }
+    th,
+    td {
+        padding: 15px;
+    }
+    .containerProducts,
+    .productoTh {
+        display: none;
+    }
+    .imageTh,
+    .nombreTh,
+    .priceTh,
+    .imagenTd,
+    .nombreTd,
+    .priceTd {
+            display: table-cell;
+            vertical-align: inherit;
+    }
+}
+
+@media (min-width: 1024px) {
+    .padre-create {
+    max-width: 800px;
+    }
+
+    .cancel {
+        max-width: 374px;
+        margin: 0 auto;
+    }
+    th,
+    td {
+        padding: 25px;
+    }
+    .container-img {
+        width: 110px;
+    }
+}
