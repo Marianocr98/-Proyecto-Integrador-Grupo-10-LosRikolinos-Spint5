@@ -23,7 +23,7 @@ const userController = {
             return res.render('./users/register', {
                 errors: resultadosValidos.mapped()
             });
-        }
+        }res.redirect('/')
     },
     profile: (req, res)=> {
         res.render('./users/profile');

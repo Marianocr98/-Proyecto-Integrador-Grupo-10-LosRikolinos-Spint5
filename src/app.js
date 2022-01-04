@@ -2,7 +2,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-app.use(express.static('public'));
+app.use(express.static('../public'));
 
 /*Para procesar los formularios */
 app.use(express.urlencoded({extended:false}));
@@ -32,5 +32,5 @@ app.use('/', products);
 
 /*Server Funcionando*/
 app.listen(process.env.PORT || 3000 , ()=>{
-    console.log('Servidor funcionando');
+    console.log('Servidor funcionando puerto 3000');
 });
