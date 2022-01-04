@@ -21,7 +21,8 @@ const userController = {
         const resultadosValidos = validationResult(req);
         if(resultadosValidos.errors.length > 0){
             return res.render('./users/register', {
-                errors: resultadosValidos.mapped()
+                errors: resultadosValidos.mapped(),
+                oldData: req.body
             });
         }res.redirect('/')
     },

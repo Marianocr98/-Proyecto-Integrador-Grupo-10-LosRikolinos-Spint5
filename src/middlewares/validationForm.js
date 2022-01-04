@@ -3,7 +3,7 @@ const { body } = require('express-validator');
 
 
 const validations = [
-    body('usuario').notEmpty().withMessage('Debe completar este campo'),
+    body('fullName').notEmpty().withMessage('Debe completar este campo'),
     body('email').notEmpty().withMessage('Debe escribir un correo electrónico'),
     body('password').notEmpty().withMessage('Debe escribir una contraseña'),
     body('confirm').notEmpty().withMessage('Debe confirmar su contraseña'),

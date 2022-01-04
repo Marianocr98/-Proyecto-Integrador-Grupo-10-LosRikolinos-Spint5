@@ -45,7 +45,7 @@
 
                 <!-- Poner nombre y apellido de usuario  -->
                 <label for="usuario"></label>
-                <input type="text" placeholder="Nombre y apellido" name="fullName" id="usuario"  >
+                <input type="text" placeholder="Nombre y apellido" name="fullName" id="usuario"  value="<%= locals.oldData ? oldData.fullName : null %>">
 
                 <%if(locals.errors && errors.usuario) { %>
                     <div class="text-danger">
@@ -56,7 +56,7 @@
             <!-- Poner email de usuario  -->
                 
                 <label for="email"></label>
-                <input type="email" placeholder="Correo electronico" name="email" id="email" >
+                <input type="email" placeholder="Correo electronico" name="email" id="email" value="<%= locals.oldData ? oldData.email : null %>">
 
                 <%if(locals.errors && errors.email) { %>
                     <div class="text-danger">
@@ -66,7 +66,7 @@
                 
                 <!-- Poner contraseña de usuario  -->
                     <label for="password"></label>
-                    <input type="password" placeholder="Escribe tu contraseña" name="password" id="password" >
+                    <input type="password" placeholder="Escribe tu contraseña" name="password" id="password" value="<%= locals.oldData ? oldData.password : null %>" >
 
                     <%if(locals.errors && errors.password) { %>
                         <div class="text-danger">
@@ -76,7 +76,7 @@
                 
                     <!-- Poner contraseña de usuario, confirmar  -->
                     <label for="password"></label>
-                    <input type="password" placeholder="Confirmar tu contraseña" name="confirm" id="password" >
+                    <input type="password" placeholder="Confirmar tu contraseña" name="confirm" id="password" value="<%= locals.oldData ? oldData.confirm : null %>" >
 
                     <%if(locals.errors && errors.password) { %>
                         <div class="text-danger">
@@ -85,7 +85,7 @@
                         <% } %>
 
                     <label for="avatar">Tu avatar:</label>
-                    <input type="file" name="avatar" id="avatar">
+                    <input type="file" name="avatar" id="avatar" value="<%= locals.oldData ? oldData.avatar : null %>">
                     <% if (locals.errors && errors.avatar) { %>
                         <div class="text-danger">
                             <%= errors.avatar.msg %>
