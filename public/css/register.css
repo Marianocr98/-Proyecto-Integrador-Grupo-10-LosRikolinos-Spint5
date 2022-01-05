@@ -59,7 +59,7 @@ body {
     padding: 12px;
 }
 
-.email-password{
+.form-register{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -67,7 +67,7 @@ body {
     max-width: 450px;
     
 }
-.email-password input{
+.form-register input{
     border-radius: 15px;
     padding: 12px;
     width: 95%;

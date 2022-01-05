@@ -1,5 +1,8 @@
 const { validationResult} = require('express-validator');
 
+
+/*const user = require('../model/user')*/
+
 // ESTO SERIA EL GESTOR DEL MODELO
 
 const jsonDB = require('../model/jsonDatabase');
@@ -16,6 +19,16 @@ const userController = {
     register: (req, res)=> {
         res.render('./users/register');
     },
+
+    /*save: (req, res)=> {
+
+        let newUser = user.add(req.body)
+        res.send(newUser);
+    },
+
+    access: (req, res)=> {
+        res.send(req.body);
+    }*/
     /*todo lo que se envia del formulario de registro*/
     processRegister: (req, res)=>{
         const resultadosValidos = validationResult(req);

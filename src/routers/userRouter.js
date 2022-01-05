@@ -24,6 +24,10 @@ const validations = require('../middlewares/validationForm');
 router.get('/login', userController.login);
 router.get('/register', userController.register);
 
+//router.post('/access', userController.access);
+
+//router.post('/save', userController.save);
+
 /* Procesa el registro*/
 router.post('/register', multerUpFile.single('avatar'),logRegisterMiddleware, validations, userController.processRegister);
 

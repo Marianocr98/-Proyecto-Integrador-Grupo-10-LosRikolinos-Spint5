@@ -2,6 +2,9 @@
 const express = require('express');
 const app = express();
 const path = require('path');
+const session = require('express-session');
+const cookie = require('cookie-parser');
+
 app.use(express.static('../public'));
 
 /*Para procesar los formularios */
@@ -21,6 +24,12 @@ const mainRutas = require('./routers/indexRouter');
 const rutaUser = require('./routers/userRouter') /*airu*/ 
 const products = require('./routers/productsRouter');
 
+/*//Middlewares APP
+app.use(express.urlencoded({extended: true}))
+app.use(session({secret:'session', saveUninitialized : true, resave : false}))
+
+app.use(cookie())*/
+
 
 
 /* RUTAS */
@@ -34,3 +43,6 @@ app.use('/', products);
 app.listen(process.env.PORT || 3000 , ()=>{
     console.log('Servidor funcionando puerto 3000');
 });
+
+
+
