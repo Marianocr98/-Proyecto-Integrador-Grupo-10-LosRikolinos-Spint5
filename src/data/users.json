@@ -1,38 +1,49 @@
-[{  
-    "id" : "1",
-    "first-name": "Marcelo",
-    "last-name": "Olivera",
-    "category": "admin",
-    "email":"marce@gmail.com",
-    "password":"dani12345",
-    "image" : ""
-    },
-    {
-    "id" : "2",
-    "first-name": "Mariano",
-    "last-name": "Cespedez",
-    "category": "admin",
-    "email":"marianodh@gmail.com",
-    "password":"mariano1234",
-    "image" : ""
-    },
-    {
-    "id" : "3",
-    "first-name": "Andres",
-    "last-name": "Nunez",
-    "category": "admin",
-    "email":"andresdh@gmail.com",
-    "password":"andres1234",
-    "image" : ""
-        },
-        {
-    "id" : "4",
-    "first-name": "Mayra",
-    "last-name": "Gutierrez",
-    "category": "admin",
-    "email":"mayradh@gmail.com",
-    "password":"mayra1234",
-    "image" : ""
-        }
-
+[
+ {
+  "id": 1,
+  "fullName": "Marcelo Olivera",
+  "category": "admin",
+  "email": "marce@gmail.com",
+  "password": "dani12345",
+  "image": ""
+ },
+ {
+  "id": 2,
+  "fullName": "Mariano Cespedez",
+  "category": "admin",
+  "email": "marianodh@gmail.com",
+  "password": "mariano1234",
+  "image": ""
+ },
+ {
+  "id": 3,
+  "fullName": "Andres Nuñez",
+  "category": "admin",
+  "email": "andresdh@gmail.com",
+  "password": "andres1234",
+  "image": ""
+ },
+ {
+  "id": 4,
+  "fullName": "Mayra Gutierrez",
+  "category": "admin",
+  "email": "mayradh@gmail.com",
+  "password": "mayra1234",
+  "image": ""
+ },
+ {
+  "id": 5,
+  "fullName": "Marcelo Olivera",
+  "email": "olivera.m.et13@gmail.com",
+  "password": "Marcelo-123",
+  "confirm": "Marcelo-123"
+ },
+ {
+  "id": 6,
+  "fullName": "Marcelo Olivera",
+  "email": "olivera.m.et13@gmail.com",
+  "password": "Marce-123",
+  "confirm": "Marce-123",
+  "avatar": "1641588942344_img.png"
+ }
 ]

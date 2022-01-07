@@ -9,6 +9,7 @@ const jsonDB = require('../model/jsonDatabase');
 
 // Maneja todos los métodos para PRODUCTO, que lo pasa como parámetro
 const productModel = jsonDB('products');
+const User = require('../model/user');
 
 const userController = {
     
@@ -37,7 +38,14 @@ const userController = {
                 errors: resultadosValidos.mapped(),
                 oldData: req.body
             });
-        }res.redirect('/')
+        }
+        
+        let userToCreate = {
+            ...req.body,
+            avatar:req.file.filename
+        }
+        User.create(userToCreate)
+        res.redirect('/')
     },
     profile: (req, res)=> {
         res.render('./users/profile');

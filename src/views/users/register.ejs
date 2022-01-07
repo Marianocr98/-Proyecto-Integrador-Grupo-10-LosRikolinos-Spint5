@@ -98,7 +98,7 @@
                     id="password" 
                     value="<%= locals.oldData ? oldData.confirm : null %>" >
 
-                    <%if(locals.errors && errors.password) { %>
+                    <%if(locals.errors && errors.confirm) { %>
                         <div class="text-danger">
                             <%= errors.confirm.msg %> 
                         </div>
