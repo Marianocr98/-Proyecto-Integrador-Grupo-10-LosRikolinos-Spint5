@@ -45,5 +45,37 @@
   "password": "Marce-123",
   "confirm": "Marce-123",
   "avatar": "1641588942344_img.png"
+ },
+ {
+  "id": 7,
+  "fullName": "Marcelo Olivera",
+  "email": "olivera.m.et13@gmail.com",
+  "password": "Marce-123",
+  "confirm": true,
+  "avatar": "1641662885515_img.png"
+ },
+ {
+  "id": 8,
+  "fullName": "Marcelo Olivera",
+  "email": "olivera.m.et13@gmail.com",
+  "password": "$2b$10$HeWeod7SooI1IP0Xi/iXk.V8vhIcDInpLuu2.8n4wLaeY6yTNQc4i",
+  "confirm": "$2b$10$tpqzPZbxYZMiAoEJ/T0L9en5MLY53BwnDEcSW.O7M0x5QLaliFLkO",
+  "avatar": "1641663273357_img.png"
+ },
+ {
+  "id": 9,
+  "fullName": "Marcelo Olivera",
+  "email": "olivera.dh@gmail.com",
+  "password": "$2b$10$0X0AkmDNDtUkRoZT1eFCSuOPFi2xseMtT/rcEqzbtnJns5Uy/bgNu",
+  "confirm": "$2b$10$UW/Z61qU3ztDz4vIpQCEVuBm62ZrvX8y9VLny5dEIQ.PqG3Jfh4PS",
+  "avatar": "1641664637373_img.png"
+ },
+ {
+  "id": 10,
+  "fullName": "Marcelo Olivera",
+  "email": "olivera.dh@gmail.com",
+  "password": "$2b$10$0X0AkmDNDtUkRoZT1eFCSuOPFi2xseMtT/rcEqzbtnJns5Uy/bgNu",
+  "confirm": "$2b$10$UW/Z61qU3ztDz4vIpQCEVuBm62ZrvX8y9VLny5dEIQ.PqG3Jfh4PS",
+  "avatar": "1641664637373_img.png"
  }
 ]

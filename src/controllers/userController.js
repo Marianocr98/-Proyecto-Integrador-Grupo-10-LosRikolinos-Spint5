@@ -1,5 +1,5 @@
 const { validationResult} = require('express-validator');
-
+const bcrypt = require('bcrypt')
 
 /*const user = require('../model/user')*/
 
@@ -39,13 +39,34 @@ const userController = {
                 oldData: req.body
             });
         }
-        
+        //let data = req.body
+       // let deleted = delete data.confirm
+        let userInDB = User.findByField('email',req.body.email);
+        if(userInDB){
+            return res.render('../views/users/register.ejs',{
+                errors:{
+                    email :{
+                        msg: 'Este email ya esta registrado'
+                    }
+            },
+            oldData:req.body,
+        })
+        }
+
+
+
         let userToCreate = {
+            
             ...req.body,
+            password: bcrypt.hashSync(req.body.password,10),
+            confirm: bcrypt.hashSync(req.body.confirm,10),
+            //confirm: deleted,
             avatar:req.file.filename
         }
         User.create(userToCreate)
-        res.redirect('/')
+        let userCreated =  User.create(userToCreate)
+        res.redirect('/login')
+    
     },
     profile: (req, res)=> {
         res.render('./users/profile');
