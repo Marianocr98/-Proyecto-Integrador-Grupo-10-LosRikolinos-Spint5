@@ -567,7 +567,52 @@ animation: carrucel 14s infinite alternate linear;
         display: block;
 
     }
+    .menu > li{
+        position: relative;
+        display: inline-block;
+    }
+    
+    .menu > li > a{
+        display: block;
+        padding: 15px 20px;
+        color: #353535;
+        font-family: 'Open sans';
+        text-decoration: none;
+    }
+    
+    .menu li a:hover{
+        color: #CE7D35;
+        transition: all .3s;
+    }
+    
+    /* Submenu*/
+    
+    .submenu{
+        position: absolute;
+        right: 5px;
+        background: #333333;
+        width: 250%;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 1.5s;
+    }
+   li{
+       list-style: none;
+   }
 
+    .submenu li a{
+        display: block;
+        color: #fff;
+        padding:15px 20px;
+        font-size:24px;
+        font-family: 'Open sans';
+        text-decoration: none;
+    }
+    
+    .menu li:hover .submenu{
+        visibility: visible;
+        opacity: 1;
+    }
     .burger-menu {
         display: none;
     }
@@ -576,8 +621,6 @@ animation: carrucel 14s infinite alternate linear;
         display: block;
         text-align: end;
         font-size: 30px;
-        padding-bottom: 40px;
-        padding-right: 20px;
     }
 
     .cuenta-registro a i {
@@ -736,7 +779,7 @@ animation: carrucel 14s infinite alternate linear;
 
     .cart {
         text-align: end;
-        padding-right: 20px;
+        padding-right: 40px;
     }
 
 
