@@ -275,11 +275,6 @@ animation: carrucel 14s infinite alternate linear;
 
 @media (min-width: 481px) {
 
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
 
     body {
         background-color: #000;
@@ -529,11 +524,7 @@ animation: carrucel 14s infinite alternate linear;
 
 @media (min-width: 769px) {
 
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+
 
     body {
         background-color: #000;
@@ -561,8 +552,8 @@ animation: carrucel 14s infinite alternate linear;
     }
 }
 
-/* Empieza el diseño responsivo 990px */
-@media (min-width: 1030px) {
+/* Empieza el diseño responsivo 1024px */
+@media (min-width: 1024px) {
     .contenedor-buscador-navbar {
         display: block;
 
@@ -616,6 +607,58 @@ animation: carrucel 14s infinite alternate linear;
     .burger-menu {
         display: none;
     }
+
+    .navegacion{
+        margin: 30px auto;
+    }
+    
+    .navegacion ul{
+        list-style: none;
+    }
+    
+    .menu-nav > li{
+        position: relative;
+        display: inline-block;
+    }
+    
+    .menu-nav > li > a{
+        display: block;
+        padding: 15px 20px;
+        color: #ffffff;
+        font-family: 'Open sans';
+        text-decoration: none;
+    }
+    
+    .menu-nav li a:hover{
+        color: #CE7D35;
+        transition: all .3s;
+    }
+    
+    /* Submenu-menu*/
+    
+    .submenu-menu{
+        position: absolute;
+        background: #333333;
+        width: 120%;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 1.5s;
+    }
+    
+    .submenu-menu li a{
+        display: block;
+        padding: 15px;
+        color: #fff;
+        font-family: 'Open sans';
+        font-size: 12px;
+        text-decoration: none;
+    }
+    
+    .menu-nav li:hover .submenu-menu{
+        visibility: visible;
+        opacity: 1;
+    }
+
 
     .cuenta-registro {
         display: block;
@@ -757,11 +800,7 @@ animation: carrucel 14s infinite alternate linear;
 
 @media (min-width: 1280px) {
 
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+
     
 
     .slider img {

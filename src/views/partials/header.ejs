@@ -25,13 +25,27 @@
 
         <div class="contenedor-buscador-navbar">
 
-            <div class="titulos-home">
-                <a href="/">Home</a>
-                <a href="/menu">Menu</a>
-                <a href="/productos">Productos</a>
-                <a href="/#Nosotros">Nosotros</a>
-                <a href="#footer">Contacto</a>
-            </div>
+            <nav class="navegacion">
+                <ul class="menu-nav">
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="/menu">Menu</a>
+                        <ul class="submenu-menu">
+                            <%  
+										let menu = ['Hamburguesa', 'Pizza', 'Pastas', 'Empanadas', 'Asado', 'Bebidas'];
+									%>
+                                    <% for (const oneCategory of menu) { %>
+                            <li><a href="/productos/<%= oneCategory %>"> <%= oneCategory %> </a></li>
+                                    <% }  %> 
+                        </ul>
+                    </li>
+                    <li><a href="/productos">Productos</a>
+                    </li>
+                        
+                    </li>
+                    <li><a href="#Nosotros">Nosotros</a>
+                    <li><a href="#footer">Contacto</a>
+                </ul>
+            </nav>
 
             <div class="buscador">
                 <form action="/search" method="GET">
