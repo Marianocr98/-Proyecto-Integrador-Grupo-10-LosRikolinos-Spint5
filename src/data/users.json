@@ -39,30 +39,6 @@
   "confirm": "Marcelo-123"
  },
  {
-  "id": 6,
-  "fullName": "Marcelo Olivera",
-  "email": "olivera.m.et13@gmail.com",
-  "password": "Marce-123",
-  "confirm": "Marce-123",
-  "avatar": "1641588942344_img.png"
- },
- {
-  "id": 7,
-  "fullName": "Marcelo Olivera",
-  "email": "olivera.m.et13@gmail.com",
-  "password": "Marce-123",
-  "confirm": true,
-  "avatar": "1641662885515_img.png"
- },
- {
-  "id": 8,
-  "fullName": "Marcelo Olivera",
-  "email": "olivera.m.et13@gmail.com",
-  "password": "$2b$10$HeWeod7SooI1IP0Xi/iXk.V8vhIcDInpLuu2.8n4wLaeY6yTNQc4i",
-  "confirm": "$2b$10$tpqzPZbxYZMiAoEJ/T0L9en5MLY53BwnDEcSW.O7M0x5QLaliFLkO",
-  "avatar": "1641663273357_img.png"
- },
- {
   "id": 9,
   "fullName": "Marcelo Olivera",
   "email": "olivera.dh@gmail.com",
@@ -77,5 +53,77 @@
   "password": "$2b$10$0X0AkmDNDtUkRoZT1eFCSuOPFi2xseMtT/rcEqzbtnJns5Uy/bgNu",
   "confirm": "$2b$10$UW/Z61qU3ztDz4vIpQCEVuBm62ZrvX8y9VLny5dEIQ.PqG3Jfh4PS",
   "avatar": "1641664637373_img.png"
+ },
+ {
+  "id": 11,
+  "fullName": "Andres Nuñez",
+  "email": "levirius_99@hotmail.com",
+  "password": "$2b$10$KSYN9OWwxBW5IbVGXM32zOoX8yRPZk8YbApdpG4ynDpyXCkERSonS",
+  "confirm": "$2b$10$9Yl4Es74cxAFbOrFghNrsOoZRTZ6uK5O9zz2qh3FyMXDxSYidKh2W",
+  "avatar": "1641693645476_img.jpg"
+ },
+ {
+  "id": 12,
+  "fullName": "Andres Nuñez",
+  "email": "levirius_99@hotmail.com",
+  "password": "$2b$10$KSYN9OWwxBW5IbVGXM32zOoX8yRPZk8YbApdpG4ynDpyXCkERSonS",
+  "confirm": "$2b$10$9Yl4Es74cxAFbOrFghNrsOoZRTZ6uK5O9zz2qh3FyMXDxSYidKh2W",
+  "avatar": "1641693645476_img.jpg"
+ },
+ {
+  "id": 13,
+  "fullName": "andresssss",
+  "email": "andres@gmail.com",
+  "password": "$2b$10$/cRi4lwOV15rGHQ9VQm2IO7TfJ1aZxe55OQEueJ0DyBigq3C6J0Su",
+  "confirm": "$2b$10$.cpt09ZSUwAvRtjWoqMPsOtNT5LwuSIFjfyEd.Kkpg6LioYjiQStS",
+  "avatar": "1641695564371_img.jpg"
+ },
+ {
+  "id": 14,
+  "fullName": "andresssss",
+  "email": "andres@gmail.com",
+  "password": "$2b$10$/cRi4lwOV15rGHQ9VQm2IO7TfJ1aZxe55OQEueJ0DyBigq3C6J0Su",
+  "confirm": "$2b$10$.cpt09ZSUwAvRtjWoqMPsOtNT5LwuSIFjfyEd.Kkpg6LioYjiQStS",
+  "avatar": "1641695564371_img.jpg"
+ },
+ {
+  "id": 15,
+  "fullName": "Andres Nuñez",
+  "email": "andres2@gmail.com",
+  "password": "$2b$10$pXsACi3EZ/5w/vHBVsGlaOiiLXj4ChLKa7z6FgV3d8.aEBEQ9FMlG",
+  "confirm": "$2b$10$NMfJL27bfPKWWr9RyJKkEuOYyUOdk2L5NOAp47eWqsQjJRGeBmZoK",
+  "avatar": "1641696220871_img.jpg"
+ },
+ {
+  "id": 16,
+  "fullName": "aaaaaaaaaa",
+  "email": "a@gmail.com",
+  "password": "$2b$10$p.hbkZCezl6tiiiF4bZK/.XMplOjP9g0w86eq0Opm4kBbld10U/2y",
+  "confirm": "$2b$10$/7.QK.pDVgAyfoys1rJ9ee.tJ6adAYAMeV5SjLqE4jde4e.4.xh.u",
+  "avatar": "1641701135589_img.jpg"
+ },
+ {
+  "id": 18,
+  "fullName": "Andres Marc J",
+  "email": "andresc19992704@gmail.com",
+  "password": "$2b$10$zXDgFueWltpQCLL3tFfrcuZhZLZLbSrkfvXTlzlTBdVt/vEwr7akS",
+  "confirm": "$2b$10$qdifPwjNo.f2flPSEhkXdOBasFcZULzoAV11cp1gZuXF6rOru5Zde",
+  "avatar": "1641701218197_img.jpg"
+ },
+ {
+  "id": 19,
+  "fullName": "Andresssss",
+  "email": "levirius_11@hotmail.com",
+  "password": "$2b$10$04yRIqgUc5xZNnfrqF2zYe7xRgA7KfSpx.yOP/H0RoQo2Zi.Q6W6i",
+  "confirm": "$2b$10$7xYnJV5eWlGpCTS0yWof/.zdeD1.AQ5lpMlKrJ7N9TeWriQxk2AUi",
+  "avatar": "1641707487324_img.jpg"
+ },
+ {
+  "id": 20,
+  "fullName": "Andresssss",
+  "email": "levirius_11@hotmail.com",
+  "password": "$2b$10$04yRIqgUc5xZNnfrqF2zYe7xRgA7KfSpx.yOP/H0RoQo2Zi.Q6W6i",
+  "confirm": "$2b$10$7xYnJV5eWlGpCTS0yWof/.zdeD1.AQ5lpMlKrJ7N9TeWriQxk2AUi",
+  "avatar": "1641707487324_img.jpg"
  }
 ]

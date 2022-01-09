@@ -7,6 +7,16 @@ const cookie = require('cookie-parser');
 
 app.use(express.static('../public'));
 
+
+//App session 
+app.use(session({
+	secret: "Shhh, It's a secret",
+	resave: false,
+	saveUninitialized: false,
+    //Este resave y saveUnitialized es necesario para que no me salgan errores aunque son opcionales
+    
+}));
+
 /*Para procesar los formularios */
 app.use(express.urlencoded({extended:false}));
 

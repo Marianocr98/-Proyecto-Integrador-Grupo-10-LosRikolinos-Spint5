@@ -15,6 +15,28 @@ const userController = {
     
     login: (req, res)=> {
         res.render('./users/login');
+        console.log(req.session);
+    },
+    processLogin: (req, res) =>{
+        let userToLogin = User.findByField('email', req.body.email);
+
+
+		if (userToLogin) {
+			//para saber su en mi base de datos tengo la misma contrase;a que la que el usuario ingreso correra todo bien 
+			let isOkPassword = bcrypt.compareSync(req.body.password, userToLogin.password)
+			if (isOkPassword.password === req.password) {
+				req.session.userLogged = userToLogin
+                return res.redirect('/profile')
+			}
+		}
+
+		return res.render('./users/login' , {
+			errors: {
+				email: {
+					msg: 'Las credenciales son invalidas!!!'
+				}
+			}	
+		})
     },
 
     register: (req, res)=> {
@@ -69,7 +91,11 @@ const userController = {
     
     },
     profile: (req, res)=> {
-        res.render('./users/profile');
+        //NO BORREN ESTE LOG PENDEJOS QUE A MI ME SIRVE !!!!!!
+        console.log('estas en profile!');
+        console.log(req.session);
+        res.render('./users/profile',{user: req.session.userLogged});
+
     }
 };
 

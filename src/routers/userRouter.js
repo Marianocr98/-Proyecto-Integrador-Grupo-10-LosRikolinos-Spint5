@@ -21,8 +21,10 @@ const validations = require('../middlewares/validationForm');
 
 
 //RUTAS HACIA EL CONTROLLER
-router.get('/login', userController.login);
+
 router.get('/register', userController.register);
+router.get('/login', userController.login);
+
 
 //router.post('/access', userController.access);
 
@@ -31,7 +33,11 @@ router.get('/register', userController.register);
 /* Procesa el registro*/
 router.post('/register', multerUpFile.single('avatar'),logRegisterMiddleware, validations, userController.processRegister);
 
-router.get('/profile/:userId', userController.profile);
+router.get('/profile', userController.profile);
+
+/*Procesar el Login*/
+
+router.post('/login', userController.processLogin);
 
 
 module.exports = router;

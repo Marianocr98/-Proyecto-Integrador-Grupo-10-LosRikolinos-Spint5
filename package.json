@@ -2,7 +2,7 @@
   "name": "proyecto-integrador-sprint5",
   "version": "1.0.0",
   "description": "Presentable del link al tablero de trabajo del Sprint5 :",
-  "main": "app.js",
+  "main": "src/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

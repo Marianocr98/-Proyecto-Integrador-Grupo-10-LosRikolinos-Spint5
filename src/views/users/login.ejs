@@ -37,33 +37,38 @@
         
         <p class="login-user">Iniciar sesión</p>
         <!-- inicio de sesion  -->
-        <form action="/index.html" method="POST">
+        <form action="/login" method="POST"> 
+            <!-- Poner nombre de usuario  -->
+            <div class="padre-input">
+                <label for="nombre"></label>
+                <input type="email" placeholder="Usuario o e-mail" name="email" id="nombre" class="form-control">
+                <% if (locals.errors && errors.email) { %>
+                    <div class="text-danger"> 
+                        <%= errors.email.msg  %> 
+                    </div>
+                <% } %>
+            </div>   
+                <!-- Poner contraseña  -->
+            <div class="padre-input">
+                <label for="password"></label>
+                <input type="password" placeholder="Contraseña" name="password" id="password">
+            </div>
+            <!-- Boton de inicio de sesión  -->
+            <div class="olvidaste-contra">
+                <a href="">olvidaste tu contraseña?</a>
+            </div>
 
-        <!-- Poner nombre de usuario  -->
-        <div class="padre-input">
-        <label for="nombre"></label>
-        <input type="text" placeholder="Usuario o e-mail" name="usuario" id="nombre">
-        <!-- Poner contraseña  -->
-        
-        <label for="password"></label>
-        <input type="password" placeholder="Contraseña" name="password" id="password">
-        </div>
-        <!-- Boton de inicio de sesión  -->
-        <div class="olvidaste-contra">
-            <a href="">olvidaste tu contraseña?</a>
-        </div>
-
-        <section class="buton">
-        <input type="submit" value="Iniciar sesión">
-        </section>
+            <section class="buton">
+                <input type="submit" value="Iniciar sesión">
+            </section>
     
 
-        <hr class="hr">
+            <hr class="hr">
 
-        <div class="link">
-            <p>¿No tenés cuenta aún?</p>
-            <a class="link" href="/register">Registrate</a>
-        </div>
+            <div class="link">
+                <p>¿No tenés cuenta aún?</p>
+                <a class="link" href="/register">Registrate</a>
+            </div>
 
         </form>
     </main>

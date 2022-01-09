@@ -13,8 +13,8 @@ const validations = [
 
     body('password')
 	.notEmpty().withMessage('Debe escribir una contraseña').bail()
-	.isLength({ min : 8}).withMessage('La contraseña debe tener al menos 8 caracteres').bail()
-	.matches(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9]).{8,}$/, "i").withMessage('La contraseña debe contener al menos una mayúscula, una minúscula, un número y un caracter especial').bail(),
+	.isLength({ min : 8}).withMessage('La contraseña debe tener al menos 8 caracteres').bail(),
+	// .matches(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9]).{8,}$/, "i").withMessage('La contraseña debe contener al menos una mayúscula, una minúscula, un número y un caracter especial').bail(),
     
 	body('confirm')
 	.trim()
