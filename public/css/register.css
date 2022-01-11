@@ -27,7 +27,10 @@ body {
     width: 100%;
     padding: 15px;
 }
-
+.form-register  input{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+}
 .usuario i {
     font-size: 80px;
     color: #fff;
@@ -120,10 +123,7 @@ p{
     text-decoration: none;
 }
 
-input{
-    font-family: 'Caveat', cursive;
-    font-size: 25px;
-}
+
 
 @media (max-width: 480px) {
     

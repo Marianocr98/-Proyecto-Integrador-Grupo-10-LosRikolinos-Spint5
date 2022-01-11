@@ -76,16 +76,16 @@ const userController = {
         }
 
 
-
+        let body = req.body
+        delete body.confirm
         let userToCreate = {
             
-            ...req.body,
+            ...body,
             password: bcrypt.hashSync(req.body.password,10),
-            confirm: bcrypt.hashSync(req.body.confirm,10),
             //confirm: deleted,
             avatar:req.file.filename
         }
-        User.create(userToCreate)
+        // User.create(userToCreate)
         let userCreated =  User.create(userToCreate)
         res.redirect('/login')
     
