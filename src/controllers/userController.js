@@ -1,7 +1,6 @@
 const { validationResult} = require('express-validator');
 const bcrypt = require('bcrypt')
 
-/*const user = require('../model/user')*/
 
 // ESTO SERIA EL GESTOR DEL MODELO
 
@@ -24,7 +23,7 @@ const userController = {
 		if (userToLogin) {
 			//para saber su en mi base de datos tengo la misma contrase;a que la que el usuario ingreso correra todo bien 
 			let isOkPassword = bcrypt.compareSync(req.body.password, userToLogin.password)
-			if (isOkPassword.password === req.password) {
+			if (isOkPassword.password === req.body.password) {
 				req.session.userLogged = userToLogin
                 return res.redirect('/profile')
 			}
@@ -33,11 +32,11 @@ const userController = {
 		return res.render('./users/login' , {
 			errors: {
 				email: {
-					msg: 'Las credenciales son invalidas!!!'
+					msg: 'Las credenciales son inválidas!!!'
 				}
 			}	
-		})
-    },
+		});
+},
 
     register: (req, res)=> {
         res.render('./users/register');
@@ -94,8 +93,15 @@ const userController = {
         //NO BORREN ESTE LOG PENDEJOS QUE A MI ME SIRVE !!!!!!
         console.log('estas en profile!');
         console.log(req.session);
-        res.render('./users/profile',{user: req.session.userLogged});
+        res.render('./users/profile',
+        {user: req.session.userLogged});
 
+    },
+    //PARA TERMINAR LA SESSION
+    logout:(req, res)=>{
+        req.session.destroy();
+        console.log(req.session);
+        return res.redirect('/');
     }
 };
 

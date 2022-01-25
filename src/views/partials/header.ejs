@@ -7,12 +7,20 @@
             </div>
 
             <div class="cuenta-registro">
+
+
                     <ul class="menu">
                         <li><a href="/login"><i class="far fa-user-circle"></i></a>
                             <ul class="submenu">
-                                <li><a href="/login">Entrar a tu cuenta</a></li>
+
+                                <%  if (locals.isLogged) {%> 
+                                 <li><a href="/profile">Mi Perfil</a> </li> 
+                                <li><a href="/logout">Cerrar sesión</a> </li>
+                                <% } else {%> 
+                                <li><a href="/login">Iniciar sesión</a></li>
                                 <li><a href="/register">Registrarse</a></li>
-                                <li><a href="/profile">Mi Perfil</a> </li> 
+                                <% } %> 
+                                
                             </ul>
                         </li>
                     </ul>
@@ -68,6 +76,7 @@
             <!--User-->
             <div class="user">
                 <i class="fas fa-user"></i>
+               
             </div>
 
             <!-- carrito-->

@@ -7,6 +7,9 @@ const cookie = require('cookie-parser');
 
 app.use(express.static('../public'));
 
+const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
+
+
 
 //App session 
 app.use(session({
@@ -16,6 +19,8 @@ app.use(session({
     //Este resave y saveUnitialized es necesario para que no me salgan errores aunque son opcionales
     
 }));
+
+app.use(userLoggedMiddleware);
 
 /*Para procesar los formularios */
 app.use(express.urlencoded({extended:false}));

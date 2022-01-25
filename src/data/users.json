@@ -1,18 +1,3 @@
 [
- {
-  "id": 1,
-  "fullName": "Marcelo Olivera",
-  "email": "marceDH@gmail.com",
-  "password": "$2b$10$3AKxJHqfiwKEsHBi53VawOaVYH5hHMkwZq8dIbdSNKPUzEZpLvjZC",
-  "confirm": "$2b$10$E25lwzqIXt3ID.UyWulApOaeEugNi/g5KMcCVpUlLtc7kNox86qVG",
-  "avatar": "1641736747270_img.png"
- },
- {
-  "id": 2,
-  "fullName": "anndressssss",
-  "email": "andresc123@gmail.com",
-  "password": "$2b$10$QoX4yu198STK8HJeIiUZ1ekqRO6Fc7nOGHHp1Newd1HAdEFfY5AGO",
-  "confirm": "$2b$10$bVTMk2ialgGUgUtAXk5eE.8B.wATXicWLoLnzSH4VwBBz/keGFxx6",
-  "avatar": "1641736953956_img.jpg"
- }
+ 
 ]
