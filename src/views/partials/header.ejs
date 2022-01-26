@@ -10,6 +10,26 @@
 
 
                     <ul class="menu">
+                        <% if (locals.isLogged) { %>
+                            <label for="name-user" class="name-user">
+                                <%= locals.userLogged.fullName %> 
+                            </label>
+                            <li><a href="/login"> <img src="/img/avatars/<%= locals.userLogged.avatar %>" alt="imagen usuario"  style=" border-radius:90% ; width:50px; height: 40px;">
+                            </a>
+                            <ul class="submenu">
+
+                                <%  if (locals.isLogged) {%> 
+                                 <li><a href="/profile">Mi Perfil</a> </li> 
+                                <li><a href="/logout">Cerrar sesión</a> </li>
+                                <% } else {%> 
+                                <li><a href="/login">Iniciar sesión</a></li>
+                                <li><a href="/register">Registrarse</a></li>
+                                <% } %> 
+                                
+                            </ul>
+                            </li>
+                         
+                        <% }else{ %> 
                         <li><a href="/login"><i class="far fa-user-circle"></i></a>
                             <ul class="submenu">
 
@@ -23,6 +43,7 @@
                                 
                             </ul>
                         </li>
+                        <% } %> 
                     </ul>
             </div>
 
@@ -38,9 +59,9 @@
                     <li><a href="/">Inicio</a></li>
                     <li><a href="/menu">Menu</a>
                         <ul class="submenu-menu">
-                            <%  
-										let menu = ['Hamburguesa', 'Pizza', 'Pastas', 'Empanadas', 'Asado', 'Bebidas'];
-									%>
+
+                            <% let menu = ['Hamburguesa', 'Pizza', 'Pastas', 'Empanadas', 'Asado', 'Bebidas'];%>
+                            
                                     <% for (const oneCategory of menu) { %>
                             <li><a href="/productos/<%= oneCategory %>"> <%= oneCategory %> </a></li>
                                     <% }  %> 
