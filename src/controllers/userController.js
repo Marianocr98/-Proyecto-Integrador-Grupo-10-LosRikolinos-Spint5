@@ -13,6 +13,7 @@ const User = require('../model/user');
 const userController = {
     
     login: (req, res)=> {
+        console.log(req.cookies);
         res.render('./users/login');
         console.log(req.session);
     },
@@ -24,7 +25,11 @@ const userController = {
 			//para saber su en mi base de datos tengo la misma contrase;a que la que el usuario ingreso correra todo bien 
 			let isOkPassword = bcrypt.compareSync(req.body.password, userToLogin.password)
 			if (isOkPassword) {
-				req.session.userLogged = userToLogin
+				req.session.userLogged = userToLogin;
+
+                if(req.body.remember_user){
+                    res.cookie('userEmail', req.body.email, {maxAge:(1000 * 60) * 60})
+                }
                 return res.redirect('/profile')
 			}
 		}
@@ -90,7 +95,8 @@ const userController = {
     
     },
     profile: (req, res)=> {
-        //NO BORREN ESTE LOG PENDEJOS QUE A MI ME SIRVE !!!!!!
+        //NO BORREN ESTOS LOG  !!!!!!
+        console.log(req.cookies.userEmail);
         console.log('estas en profile!');
         console.log(req.session);
         res.render('./users/profile',
@@ -99,6 +105,7 @@ const userController = {
     },
     //PARA TERMINAR LA SESSION
     logout:(req, res)=>{
+        res.clearCookie('userEmail');
         req.session.destroy();
         console.log(req.session);
         return res.redirect('/');

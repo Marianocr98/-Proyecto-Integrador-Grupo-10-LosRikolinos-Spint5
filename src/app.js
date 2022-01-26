@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const session = require('express-session');
-const cookie = require('cookie-parser');
+const cookies = require('cookie-parser');
 
 app.use(express.static('../public'));
 
@@ -20,7 +20,10 @@ app.use(session({
     
 }));
 
+app.use(cookies());
+
 app.use(userLoggedMiddleware);
+
 
 /*Para procesar los formularios */
 app.use(express.urlencoded({extended:false}));
