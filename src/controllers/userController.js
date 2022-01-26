@@ -23,7 +23,7 @@ const userController = {
 		if (userToLogin) {
 			//para saber su en mi base de datos tengo la misma contrase;a que la que el usuario ingreso correra todo bien 
 			let isOkPassword = bcrypt.compareSync(req.body.password, userToLogin.password)
-			if (isOkPassword.password === req.body.password) {
+			if (isOkPassword) {
 				req.session.userLogged = userToLogin
                 return res.redirect('/profile')
 			}
@@ -35,7 +35,7 @@ const userController = {
 					msg: 'Las credenciales son inválidas!!!'
 				}
 			}	
-		});
+		})
 },
 
     register: (req, res)=> {
