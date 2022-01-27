@@ -5,7 +5,7 @@ const path = require('path');
 const session = require('express-session');
 const cookies = require('cookie-parser');
 
-app.use(express.static('../public'));
+app.use(express.static(path.join(__dirname, '../public')));
 
 const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
 
@@ -42,19 +42,11 @@ const mainRutas = require('./routers/indexRouter');
 const rutaUser = require('./routers/userRouter') /*airu*/ 
 const products = require('./routers/productsRouter');
 
-/*//Middlewares APP
-app.use(express.urlencoded({extended: true}))
-app.use(session({secret:'session', saveUninitialized : true, resave : false}))
-
-app.use(cookie())*/
-
-
 
 /* RUTAS */
 app.use('/', mainRutas);
 app.use('/', rutaUser) 
 app.use('/', products);
-
 
 
 /*Server Funcionando*/

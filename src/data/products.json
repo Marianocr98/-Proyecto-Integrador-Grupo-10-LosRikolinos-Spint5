@@ -329,10 +329,19 @@
  },
  {
   "id": "37",
-  "title": "Brocheta",
-  "description": " Brocheta de pollo",
-  "price": "350 ",
+  "title": "brochett",
+  "description": " comeme ",
+  "price": "550   ",
   "category": "asado",
-  "image": "imgProductos-1640730881734.jpg"
+  "image": "imgProductos-1643231745358.jpg"
+ },
+ {
+  "id": 38,
+  "title": "Lufy",
+  "image": "imgProductos-1643241638053.jpg",
+  "description": "praaa",
+  "price": 15000000,
+  "section": "productos",
+  "category": "asado"
  }
 ]

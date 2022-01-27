@@ -587,9 +587,26 @@ animation: carrucel 14s infinite alternate linear;
         opacity: 0;
         transition: opacity 1.5s;
     }
-   li{
-       list-style: none;
-   }
+    
+    .name-user {
+        font-size: 14px;
+        position: absolute;
+        right: 30px;
+        top: 70px;
+    }
+
+    .avatarImg{
+        border-radius:90%;
+        position: absolute;
+        right: 40px;
+        top: 14px;
+        width: 50px; 
+        height: 40px;
+    }
+
+    li{
+        list-style: none;
+    }
 
     .submenu li a{
         display: block;

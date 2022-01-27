@@ -5,5 +5,19 @@
   "email": "nv@mail.com",
   "password": "$2b$10$fVlLr4JrmhfhpWwFqga7Quk9B/PYaSE9J.SDS/hjQc4Ve91.M1p3.",
   "avatar": "1643205345651_img.png"
+ },
+ {
+  "id": 2,
+  "fullName": "Mariano Cespedez",
+  "email": "marianocespedez@gmail.com",
+  "password": "$2b$10$eOgWGapGvyMnCgD3sBktnuPICxxr/StiTUgQOUXGNqqYaRVZTrvXe",
+  "avatar": "1643235504681_img.png"
+ },
+ {
+  "id": 3,
+  "fullName": "Mariano Cespedez",
+  "email": "marianocespedz@gmail.com",
+  "password": "$2b$10$7aZhc7AnwOiK87uL8VBtbOCfh/OINqvAaYLZIMvvFqgxftsW1dNPu",
+  "avatar": "1643237681916_img.png"
  }
 ]

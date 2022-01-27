@@ -34,7 +34,7 @@ router.get('/login', guestMiddleware, userController.login);
 //router.post('/save', userController.save);
 
 /* Procesa el registro*/
-router.post('/register', multerUpFile.single('avatar'),logRegisterMiddleware, validations, userController.processRegister);
+router.post('/register', multerUpFile.single('avatar'), logRegisterMiddleware, validations, userController.processRegister);
 
 router.get('/profile', authMiddleware, userController.profile);
 
