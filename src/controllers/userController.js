@@ -7,9 +7,9 @@ const User = require('../model/user');
 const userController = {
     
     login: (req, res)=> {
-        console.log(req.cookies);
+        // console.log(req.cookies);
         res.render('./users/login');
-        console.log(req.session);
+        // console.log(req.session);
     },
     processLogin: (req, res) =>{
         let userToLogin = User.findByField('email', req.body.email);
@@ -83,7 +83,7 @@ const userController = {
     logout:(req, res)=>{
         res.clearCookie('userEmail');
         req.session.destroy();
-        console.log(req.session);
+        // console.log(req.session);
         return res.redirect('/');
     }
 };
