@@ -79,7 +79,7 @@ const productController = {
     search: (req, res) => {
 
         let busqueda = req.query.search.toLowerCase();
-        console.log("Estoy buscando:" + busqueda);
+        // console.log("Estoy buscando:" + busqueda);
 
         let productos = productModel.readFile();
 

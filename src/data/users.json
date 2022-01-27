@@ -1,23 +1,30 @@
 [
  {
   "id": 1,
-  "fullName": "Airuuussss",
-  "email": "nv@mail.com",
-  "password": "$2b$10$fVlLr4JrmhfhpWwFqga7Quk9B/PYaSE9J.SDS/hjQc4Ve91.M1p3.",
-  "avatar": "1643205345651_img.png"
+  "fullName": "Marcelo Olivera",
+  "email": "marce@rikolinos.com",
+  "password": "$2b$10$XRGSjkrdDbyJjSHxmqts0u0kmX/AIIdBnqODodjjrnaCakETcp9qa",
+  "avatar": "1643294571105_img.jpg"
  },
  {
   "id": 2,
-  "fullName": "Mariano Cespedez",
-  "email": "marianocespedez@gmail.com",
-  "password": "$2b$10$eOgWGapGvyMnCgD3sBktnuPICxxr/StiTUgQOUXGNqqYaRVZTrvXe",
-  "avatar": "1643235504681_img.png"
+  "fullName": "Mayra Gutierrez",
+  "email": "mayra@rikolinos.com",
+  "password": "$2b$10$xrOqxsHa2On6UJ2IWMH.u.vQfqUTyaLXLlR8h03Y2oPOrREw37oR.",
+  "avatar": "1643294657950_img.jpg"
  },
  {
   "id": 3,
+  "fullName": "Andres Nuñez",
+  "email": "andres@rikolinos.com",
+  "password": "$2b$10$0u.0oRk0KrEn63UMIVte9u0Brf9u9h7g6ZYC4ndfKCFfsSPtd9Q1u",
+  "avatar": "1643294703824_img.jpg"
+ },
+ {
+  "id": 4,
   "fullName": "Mariano Cespedez",
-  "email": "marianocespedz@gmail.com",
-  "password": "$2b$10$7aZhc7AnwOiK87uL8VBtbOCfh/OINqvAaYLZIMvvFqgxftsW1dNPu",
-  "avatar": "1643237681916_img.png"
+  "email": "mariano@rikolinos.com",
+  "password": "$2b$10$sxhJ.2CBBLFAcSSNqCKl2OyQLbDUmqqbZL5qPKoC0Cq.MrVcqcGEi",
+  "avatar": "1643294746258_img.jpg"
  }
 ]
