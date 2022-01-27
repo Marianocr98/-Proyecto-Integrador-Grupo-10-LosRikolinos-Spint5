@@ -1,24 +1,21 @@
 # Los Rikolinos 👨‍🍳
 
-
  
 ## RETRO SPRINT 3
 
 
 ### COMENZAR A HACER:
 
-- Hacer las practicas del proyecto integrador al momento
 
-- Hacer las ejercitaciones de clase 
+- Hacer las ejercitaciones de clase para mas al dia.
 
 - Ser mas independientes
 
+-Usar mas el trello.
 
 ### HACER MÁS:
 
-- Contactarse mas las novedades y mejoras del codigo
-
-- Estar actualizados en el playground al dia.
+- Estar actualizados en el playground.
 
 ### CONTINUAR HACIENDO:
 
@@ -28,15 +25,12 @@
 
 ### HACER MENOS:
 
-- Crear ramas
-
 
 ### DEJAR DE HACER:
 
-- Crear ramas
 
 
 ### Trello:
-https://trello.com/b/g94mhrCU/sprint-4
+https://trello.com/b/1fcAcJMK/sprint-5
 
 
