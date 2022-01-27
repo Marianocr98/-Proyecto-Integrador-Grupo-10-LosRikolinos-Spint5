@@ -2,12 +2,15 @@
  https://trello.com/b/1fcAcJMK/sprint-5
 
 
- Usuario: "marianocespedez@gmail.com"
- password: "12345678"
+ Usuario: "marce@rikolinos.com"
+ password: "Rikolinos-1234"
 
-Usuario: "marianocespedz@gmail.com"
-password: "12345678"
+Usuario: "mayra@rikolinos.com"
+password: "Rikolinos-1234"
 
-Usuario: "nv@mail.com"
-password: "123456789"
+Usuario: "andres@rikolinos.com"
+password: "Rikolinos-1234"
+
+Usuario: "mariano@rikolinos.com"
+password: "Rikolinos-1234"
 
