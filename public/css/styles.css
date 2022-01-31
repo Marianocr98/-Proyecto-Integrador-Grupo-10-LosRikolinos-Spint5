@@ -47,10 +47,13 @@ body {
 
 .cart {
     text-align: center;
-    padding-top: 60px;
+    padding: 10px 0 ;
     font-size: 25px;
 }
 
+.menu  li a i{
+    font-size: 30px;
+}
 .cart i {
     color: white;
 }
@@ -531,9 +534,7 @@ animation: carrucel 14s infinite alternate linear;
         color: #ebebeb;
     }
 
-    .cart {
-        padding-top: 10px;
-    }
+
 
 
     .slider {
@@ -550,6 +551,10 @@ animation: carrucel 14s infinite alternate linear;
         width: 100%;
         height: 550px;
     }
+    .cart{
+        padding:5px;
+        margin: 5px;
+    }
 }
 
 /* Empieza el diseño responsivo 1024px */
@@ -562,7 +567,11 @@ animation: carrucel 14s infinite alternate linear;
         position: relative;
         display: inline-block;
     }
-    
+    .menu{
+        position: absolute;
+        right: 10px;
+        top: 20px;
+    }
     .menu > li > a{
         display: block;
         padding: 15px 20px;
@@ -586,22 +595,22 @@ animation: carrucel 14s infinite alternate linear;
         visibility: hidden;
         opacity: 0;
         transition: opacity 1.5s;
+        z-index: 1;
     }
     
     .name-user {
         font-size: 14px;
         position: absolute;
-        right: 30px;
-        top: 70px;
+        right:70px;
+        top: 20px;
     }
 
     .avatarImg{
         border-radius:90%;
-        position: absolute;
         right: 40px;
         top: 14px;
-        width: 50px; 
-        height: 40px;
+        width: 45px; 
+        height: 45px;
     }
 
     li{
@@ -612,7 +621,7 @@ animation: carrucel 14s infinite alternate linear;
         display: block;
         color: #fff;
         padding:15px 20px;
-        font-size:24px;
+        font-size:15px;
         font-family: 'Open sans';
         text-decoration: none;
     }
@@ -679,14 +688,14 @@ animation: carrucel 14s infinite alternate linear;
 
     .cuenta-registro {
         display: block;
-        text-align: end;
-        font-size: 30px;
     }
 
     .cuenta-registro a i {
         color: white;
     }
-
+    .menu  li a i{
+        font-size: 30px;
+    }
     .cuenta-registro a:hover i {
         color: rgb(202, 0, 0);
     }
@@ -696,15 +705,23 @@ animation: carrucel 14s infinite alternate linear;
         width: 15%;
     }
 
-    .cart {
-        text-align: end;
-        padding-right: 20px;
-    }
+
 
     .cart i:hover {
         color: rgb(220, 0, 0);
     }
+    .cart{
+        position: absolute;
+        top:100px;
+        right: 20px;
+        z-index: 0;
 
+    }
+    .container-image-avatar{
+        padding: 10px 10px 0 0;
+        
+        
+    }
     .titulos-home {
         padding-bottom: 15px;
     }
@@ -826,16 +843,11 @@ animation: carrucel 14s infinite alternate linear;
     }
 
     .cuenta-registro {
-        display: block;
-        text-align: end;
         font-size: 30px;
-        padding-bottom: 40px;
-        padding-right: 20px;
     }
 
     .cart {
         text-align: end;
-        padding-right: 40px;
     }
 
 

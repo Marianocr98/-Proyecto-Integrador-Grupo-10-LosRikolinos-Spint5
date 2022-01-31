@@ -49,7 +49,6 @@ const userController = {
                 oldData: req.body
             });
         }
-
         let userInDB = User.findByField('email',req.body.email);
         if(userInDB){
             return res.render('../views/users/register.ejs',{
@@ -61,15 +60,14 @@ const userController = {
             oldData:req.body,
         })
         }
-
-
         let body = req.body
         delete body.confirm
         let userToCreate = {
             
             ...body,
             password: bcrypt.hashSync(req.body.password,10),
-            avatar:req.file.filename
+            avatar:req.file.filename,
+            rol : "cliente"
         }
         let userCreated =  User.create(userToCreate)
         res.redirect('/login')

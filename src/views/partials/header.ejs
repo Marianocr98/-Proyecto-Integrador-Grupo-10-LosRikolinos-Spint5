@@ -16,16 +16,22 @@
                             </label>
                             
                             <li>
-                            <a href="/login"> <img src="/img/avatars/<%= locals.userLogged.avatar %>" alt="imagen usuario" class="avatarImg" ></a>
+                                <div class = "container-image-avatar">
+                                    <a href="/login"> <img src="/img/avatars/<%= locals.userLogged.avatar %>" alt="imagen usuario" class="avatarImg" ></a>
+                                </div>
                             
                             <ul class="submenu">
 
-                                <%  if (locals.isLogged) {%> 
+                                <%  if (locals.isLogged && locals.userLogged.rol == "admin") { %> 
                                 <li><a href="/profile">Mi Perfil</a> </li> 
+                                <li><a href="/viewCreate">Crear Productos</a></li>
+                                <li><a href="/viewCreate/#ListadoDeProductos">Editar Productos</a></li>
                                 <li><a href="/logout">Cerrar sesión</a> </li>
+                                
                                 <% } else {%> 
-                                <li><a href="/login">Iniciar sesión</a></li>
-                                <li><a href="/register">Registrarse</a></li>
+                                    <li><a href="/profile">Mi Perfil</a> </li> 
+                                    <li><a href="/logout">Cerrar sesión</a> </li>
+                                
                                 <% } %> 
                                 
                             </ul>
